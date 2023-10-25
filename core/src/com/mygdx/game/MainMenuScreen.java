@@ -26,7 +26,7 @@ public class MainMenuScreen implements Screen {
 
 	@Override
 	public void render(float delta) {
-		ScreenUtils.clear(0, 0, 0.2f, 1);
+		ScreenUtils.clear(0, 0, 0, 1);
 
 		camera.update();
 		batch.setProjectionMatrix(camera.combined);
@@ -39,12 +39,10 @@ public class MainMenuScreen implements Screen {
 		font.draw(batch, "2. Nivel Medio!", 200, camera.viewportHeight/2);
 		font.draw(batch, "3. Nivel Difcil!", 200, camera.viewportHeight/2-50);
 		font.draw(batch, "4. Nivel Libre!", 200, camera.viewportHeight/2-100);
-
 		batch.end();
 
-		
 		// COMIENZA EL JUEGO
-		if (Gdx.input.isTouched()) {
+		if (Gdx.input.justTouched()) {
 			game.setScreen(new GameScreen(game));
 			dispose();
 		}

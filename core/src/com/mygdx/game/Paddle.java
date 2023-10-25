@@ -4,18 +4,21 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.math.Rectangle;
 
 public class Paddle {
     private int x = 20;
     private int y = 20;
     private int width = 100;
     private int height = 10;
+    private Rectangle area;
     
     public Paddle(int x, int y, int ancho, int alto) {
     	this.x = x;
     	this.y= y;
     	width = ancho;
     	height = alto;
+        area = new Rectangle(x, y, width, height);
     }
      
     public int getX() {return x;}
@@ -35,5 +38,8 @@ public class Paddle {
         shape.rect(x, y, width, height);
     }
     
-    
+    public Rectangle getArea() {
+        return area;
+    }
+
 }

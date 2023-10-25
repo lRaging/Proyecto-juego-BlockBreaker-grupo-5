@@ -1,18 +1,13 @@
 package com.mygdx.game;
 
-import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.audio.Music;
-import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
-import com.badlogic.gdx.utils.ScreenUtils;
 
 import java.util.ArrayList;
 
@@ -22,13 +17,13 @@ public class GameScreen implements Screen {
 	private SpriteBatch batch;
 	private BitmapFont font;
 	private ShapeRenderer shape;
-	private PingBall ball;
+	private PingBallNormal ball;
 	private Paddle pad;
 	private ArrayList<Block> blocks = new ArrayList<>();
 	private int vidas;
 	private int puntaje;
 	private int nivel;
-    private Niveles dificultad;
+	private Administrar administrar;
     
 	public GameScreen(BlockBreakerMenu game) {
 		this.game = game;
@@ -41,14 +36,10 @@ public class GameScreen implements Screen {
 		batch = new SpriteBatch();
 		font = new BitmapFont();
 		font.getData().setScale(3, 2);
-		nivel = 1;
-		crearBloques(2+nivel);
-
 		shape = new ShapeRenderer();
-		ball = new PingBall(Gdx.graphics.getWidth()/2-10, 41, 10, 5, 7, true);
-		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,100,10);
-		vidas = 3;
-		puntaje = 0;
+
+		
+		administrar = new Administrar();
 	}
 
 
@@ -78,44 +69,24 @@ public class GameScreen implements Screen {
 
 	@Override
 	public void render (float delta) {
+		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		shape.begin(ShapeRenderer.ShapeType.Filled);
-		pad.draw(shape);
-		// monitorear inicio del juego
-		if (ball.estaQuieto()) {
-			ball.setXY(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11);
-			if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) ball.setEstaQuieto(false);
-		}else ball.update();
+
+		administrar.dibujarPaddle();
+		//Ver inicio del movimiento y actualizarlo
+		administrar.actualizarLugar();
 		//verificar si se fue la bola x abajo
-		if (ball.getY()<0) {
-			vidas--;
-			//nivel = 1;
-			ball = new PingBall(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11, 10, 5, 7, true);
-		}
+		administrar.comprobarPelota();
 		// verificar game over
-		if (vidas<=0) {
+		if (administrar.perder() == true) {
 	    	game.setScreen(new GameOverScreen(game));
-	    	if(Gdx.input.isTouched()) {
-	            game.setScreen(new MainMenuScreen(game));
 	    	}
-		}
 		
-        if (Gdx.input.isKeyPressed(Input.Keys.NUM_1)) {
-        	dificultad.nivel(1);
-        } else if (Gdx.input.isKeyPressed(Input.Keys.NUM_2)) {
-        	dificultad.nivel(2);
-        } else if (Gdx.input.isKeyPressed(Input.Keys.NUM_3)) {
-        	dificultad.nivel(3);
-        } else if (Gdx.input.isKeyPressed(Input.Keys.NUM_4)) {
-            dificultad.nivel(4);
-        }
-   
+		//HACER LO DE LOS BLOQUES PARA DISTINTOS NIVELES
 		// verificar si el nivel se terminó
-		if (blocks.size()==0) {
-			nivel++;
-			crearBloques(2+nivel);
-			ball = new PingBall(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11, 10, 5, 7, true);
-		}
+		administrar.nivelCompleto();
+		
 		//dibujar bloques
 		for (Block b : blocks) {
 			b.draw(shape);
@@ -130,14 +101,16 @@ public class GameScreen implements Screen {
 				i--; //para no saltarse 1 tras eliminar del arraylist
 			}
 		}
-
-		ball.checkCollision(pad);
-		ball.draw(shape);
-
-		shape.end();
+		
+		administrar.colisionesPelotas();
+		administrar.dibujarPelotas();
+		
+		
 		dibujaTextos();
+		shape.end();
 	}
 
+	
 	@Override
 	public void show() {
 
