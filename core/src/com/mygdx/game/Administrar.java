@@ -26,12 +26,18 @@ public class Administrar {
 
 		shape = new ShapeRenderer();
 		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 10, 5, 7, true);
-		ballMejora = new PingBallMejora(Gdx.graphics.getWidth()/2-10, 350, 10, 5, 7, true);
+		ballMejora = new PingBallMejora(Gdx.graphics.getWidth()/2-10, 350, 10, 5, 7, true, false);
 		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,100,10);
-        shape.setAutoShapeType(true);
+		shape.setAutoShapeType(true);
         
 		vidas = 3;
-		puntaje = 0;
+		setPuntaje(0);
+		//puntaje = 0;
+	}
+
+	public void dibujarPaddle() {
+		pad.draw(shape);
+
 	}
 	
 	public void crearBloques(int filas) {
@@ -63,9 +69,9 @@ public class Administrar {
 	}
 	
 	public void actualizarLugar() {
-		if (ball.estaQuieto()) {
+		if (ball.isEstaQuieto()) {
 			ball.setXY(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11);
-			if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) ball.setEstaQuieto(false);
+			if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) ball.SetEstaQuieto(false);
 		}else { 
 			ball.update();
 			ballMejora.update();
