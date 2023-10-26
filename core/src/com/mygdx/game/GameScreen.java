@@ -17,12 +17,9 @@ public class GameScreen implements Screen {
 	private SpriteBatch batch;
 	private BitmapFont font;
 	private ShapeRenderer shape;
-	private PingBallNormal ball;
-	private Paddle pad;
 	private ArrayList<Block> blocks = new ArrayList<>();
 	private int vidas;
 	private int puntaje;
-	private int nivel;
 	private Administrar administrar;
     
 	public GameScreen(BlockBreakerMenu game) {
@@ -37,24 +34,11 @@ public class GameScreen implements Screen {
 		font = new BitmapFont();
 		font.getData().setScale(3, 2);
 		shape = new ShapeRenderer();
-
-		
+        
 		administrar = new Administrar();
 	}
 
 
-	public void crearBloques(int filas) {
-		blocks.clear();
-		int blockWidth = 70;
-		int blockHeight = 26;
-		int y = Gdx.graphics.getHeight();
-		for (int cont = 0; cont<filas; cont++ ) {
-			y -= blockHeight+10;
-			for (int x = 5; x < Gdx.graphics.getWidth(); x += blockWidth + 10) {
-				blocks.add(new Block(x, y, blockWidth, blockHeight));
-			}
-		}
-	}
 	public void dibujaTextos() {
 		//actualizar matrices de la cámara
 		camera.update();
@@ -62,8 +46,8 @@ public class GameScreen implements Screen {
 		batch.setProjectionMatrix(camera.combined);
 		batch.begin();
 		//dibujar textos
-		font.draw(batch, "Puntos: " + puntaje, 10, 25);
-		font.draw(batch, "Vidas : " + vidas, Gdx.graphics.getWidth()-20, 25);
+		font.draw(batch, "Puntos: " + administrar.getPuntaje(), 10, 25);
+		font.draw(batch, "Vidas : " + administrar.getVidas(), Gdx.graphics.getWidth()-20, 25);
 		batch.end();
 	}
 
@@ -71,7 +55,6 @@ public class GameScreen implements Screen {
 	public void render (float delta) {
 		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		shape.begin(ShapeRenderer.ShapeType.Filled);
 
 		administrar.dibujarPaddle();
 		//Ver inicio del movimiento y actualizarlo
@@ -86,28 +69,16 @@ public class GameScreen implements Screen {
 		//HACER LO DE LOS BLOQUES PARA DISTINTOS NIVELES
 		// verificar si el nivel se terminó
 		administrar.nivelCompleto();
-		
+	
 		//dibujar bloques
-		for (Block b : blocks) {
-			b.draw(shape);
-			ball.checkCollision(b);
-		}
+		administrar.dibujarBloques();
 		// actualizar estado de los bloques
-		for (int i = 0; i < blocks.size(); i++) {
-			Block b = blocks.get(i);
-			if (b.destroyed) {
-				puntaje++;
-				blocks.remove(b);
-				i--; //para no saltarse 1 tras eliminar del arraylist
-			}
-		}
+		administrar.actualizarBloques();
 		
 		administrar.colisionesPelotas();
 		administrar.dibujarPelotas();
 		
-		
 		dibujaTextos();
-		shape.end();
 	}
 
 	

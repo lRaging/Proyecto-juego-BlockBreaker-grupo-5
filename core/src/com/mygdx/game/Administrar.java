@@ -4,9 +4,6 @@ import java.util.ArrayList;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
-import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
 public class Administrar {
@@ -25,23 +22,17 @@ public class Administrar {
 		crearBloques(2+nivel);
 
 		shape = new ShapeRenderer();
+	    shape.setAutoShapeType(true);
+		
 		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 10, 5, 7, true);
-		ballMejora = new PingBallMejora(Gdx.graphics.getWidth()/2-10, 350, 10, 5, 7, true, false);
+		ballMejora = new PingBallMejora(Gdx.graphics.getWidth()/2-10, 350, 10, 5, 7, true);
 		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,100,10);
-		shape.setAutoShapeType(true);
-        
+
 		vidas = 3;
-		setPuntaje(0);
-		//puntaje = 0;
-	}
-
-	public void dibujarPaddle() {
-		pad.draw(shape);
-
+		puntaje = 0;
 	}
 	
 	public void crearBloques(int filas) {
-		blocks.clear();
 		int blockWidth = 70;
 		int blockHeight = 26;
 		int y = Gdx.graphics.getHeight();
@@ -69,9 +60,9 @@ public class Administrar {
 	}
 	
 	public void actualizarLugar() {
-		if (ball.isEstaQuieto()) {
+		if (ball.estaQuieto()) {
 			ball.setXY(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11);
-			if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) ball.SetEstaQuieto(false);
+			if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) ball.setEstaQuieto(false);
 		}else { 
 			ball.update();
 			ballMejora.update();
@@ -84,9 +75,10 @@ public class Administrar {
 	}
 	
 	public void dibujarPelotas() {
+		shape.begin(ShapeRenderer.ShapeType.Filled);
 		ball.draw(shape);
 		ballMejora.draw(shape);
-		
+		shape.end();
 	}
 	
 	public void nivelCompleto() {
@@ -98,7 +90,37 @@ public class Administrar {
 	}
 	
 	public void dibujarPaddle() {
+		shape.begin(ShapeRenderer.ShapeType.Filled);
 		pad.draw(shape);
-
+		shape.end();
 	}
+	
+	
+	public void actualizarBloques() {
+		for (int i = 0; i < blocks.size(); i++) {
+			Block b = blocks.get(i);
+			if (b.destroyed) {
+				puntaje++;
+				blocks.remove(b);
+				i--; //para no saltarse 1 tras eliminar del arraylist
+			}
+		}
+	}
+	
+	public void dibujarBloques() {
+		shape.begin(ShapeRenderer.ShapeType.Filled);
+		for (Block b : blocks) {
+			b.draw(shape);
+			ball.checkCollision(b);
+		}
+		shape.end();
+	}
+	
+    public int getPuntaje() {
+        return puntaje;
+    }
+
+    public int getVidas() {
+        return vidas;
+    }
 }
