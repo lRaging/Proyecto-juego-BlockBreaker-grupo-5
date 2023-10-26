@@ -20,14 +20,14 @@ public class Paddle {
     	height = alto;
         area = new Rectangle(x, y, width, height);
     }
-     
-    public int getX() {return x;}
+     public int getX() {return x;}
 	public int getY() {return y;}
 	public int getWidth() {return width;}
 	public int getHeight() {return height;}
 
 	public void draw(ShapeRenderer shape){
         shape.setColor(Color.BLUE);
+	shape.rect(x, y, width, height);
         int x2 = x; //= Gdx.input.getX();
         if (Gdx.input.isKeyPressed(Input.Keys.LEFT)) x2 =x-15;
         if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) x2=x+15; 
@@ -35,7 +35,6 @@ public class Paddle {
         if (x2 > 0 && x2+width < Gdx.graphics.getWidth()) {
             x = x2;
         }
-        shape.rect(x, y, width, height);
     }
     
     public Rectangle getArea() {
