@@ -25,7 +25,7 @@ public abstract class PingBall {
 	public abstract void draw(ShapeRenderer shapeRenderer);
 	public abstract void update();
 
-	public boolean estaQuieto() {
+	public boolean isEstaQuieto() {
 		return estaQuieto;
 	}
 
