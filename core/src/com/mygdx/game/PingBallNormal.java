@@ -10,6 +10,8 @@ public class PingBallNormal extends PingBall {
 
 	public PingBallNormal(int x, int y, float size, float xSpeed, float ySpeed, boolean iniciaQuieto) {
 		super(x, y, size, xSpeed, ySpeed, iniciaQuieto);
+		sonidoColision = Gdx.audio.newSound(Gdx.files.internal("choqueBall.mp3")); // Inicializa sonidoColision
+
 	}
 
 	@Override
@@ -50,6 +52,7 @@ public class PingBallNormal extends PingBall {
 	@Override
 	public void checkCollision(Block block) {
 		if (collidesWith(block)) {
+			sonidoColision.play();
 			ySpeed = -ySpeed;
 			block.destroyed = true;
 		}
