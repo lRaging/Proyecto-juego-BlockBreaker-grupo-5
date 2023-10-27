@@ -1,0 +1,2198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_4sWuwHKPEe6hM-MRWptNsQ">
+  <modelElement href="BlockBreaker-core.uml#_5ILIEHKPEe6hM-MRWptNsQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5aBGAHKPEe6hM-MRWptNsQ" source="_5aBGCXKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5R5EwHKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5aBGAXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5R5r0HKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5aBGAnKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5aBGA3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5R5EwXKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5aBGBHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5aBGBXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5aBGBnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="cc" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5QxDYHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_magIMHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5QxqcHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5aBGB3KPEe6hM-MRWptNsQ" label="~"/>
+      <cardinality xmi:id="_5aBGCHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5aQ9oHKPEe6hM-MRWptNsQ" source="_5ajRiXKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5R8vIXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5aWdMHKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5R9WMHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5aV2IHKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5aV2IXKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5R8vInKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5aXrUHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5aXEQHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5aV2InKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="shape" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5Q0twXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mah9YHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q1U0HKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5aYSYHKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5aXrUXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5abVsHKPEe6hM-MRWptNsQ" source="_5ajRiXKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5R6S4HKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5abVsXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5R658HKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5abVsnKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5abVs3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5R6S4XKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5abVtHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5abVtXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5abVtnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="camera" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5Qy4kHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_maikcHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5QzfoHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5abVt3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5abVuHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5adK4HKPEe6hM-MRWptNsQ" source="_5ajRiXKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5R658XKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5adK4XKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5R7hAHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5adK4nKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5adK43KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5R658nKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5adK5HKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5adK5XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5adK5nKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="batch" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5QzfoXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_majLgHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q0GsHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5adK53KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5adK6HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5aeZAHKPEe6hM-MRWptNsQ" source="_5ajRiXKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5R8IEHKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5aeZAXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5R8vIHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5aeZAnKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5aeZA3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5R8IEXKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5aeZBHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5aeZBXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5aeZBnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="font" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5Q0GsXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_majykHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q0twHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5aeZB3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5aeZCHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5afnIHKPEe6hM-MRWptNsQ" sourceAnchor="0.0,127.0" targetAnchor="556.0,179.0" target="_5dzZ0HKPEe6hM-MRWptNsQ" source="_5ajRiXKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5R9WMXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5afnIXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5R99QHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5afnInKPEe6hM-MRWptNsQ" text="">
+      <visualProperties xmi:id="_56QFQHKPEe6hM-MRWptNsQ" position="-18.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5afnI3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5R9WMnKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56NpAXKPEe6hM-MRWptNsQ" position="-30.0,2.0"/>
+      <visibility xmi:id="_5afnJHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5afnJXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5afnJnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="ball" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5Q1U0XKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56QFQXKPEe6hM-MRWptNsQ" position="29.0,2.0"/>
+      <stereotypes xmi:id="_makZoHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q174HKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5afnJ3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5afnKHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5ahcUHKPEe6hM-MRWptNsQ" sourceAnchor="137.0,0.0" targetAnchor="341.0,87.0" target="_5b8_sXKPEe6hM-MRWptNsQ" source="_5ajRiXKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5R99QXKPEe6hM-MRWptNsQ"/>
+    <bendpoints xmi:id="_lVE7kHKQEe6hM-MRWptNsQ" sourceY="-165" targetX="1068"/>
+    <stereotypes xmi:id="_5ahcUXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5R-kUHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5ahcUnKPEe6hM-MRWptNsQ" text="">
+      <visualProperties xmi:id="_56U9wHKPEe6hM-MRWptNsQ" position="-552.5,-18.499999999999915"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5ahcU3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5R99QnKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56ShgHKPEe6hM-MRWptNsQ" position="-16.0,-123.5"/>
+      <visibility xmi:id="_5ahcVHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5ahcVXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5ahcVnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="pad" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5Q2i8HKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56U9wXKPEe6hM-MRWptNsQ" position="65.43750000000011,2.4999999999999147"/>
+      <stereotypes xmi:id="_malAsHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q2i8XKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5ahcV3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5ahcWHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5ajRgHKPEe6hM-MRWptNsQ" source="_5ajRiXKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5R-kUXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5ajRgXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5R_LYHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5ajRgnKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5ajRg3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5R-kUnKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5ajRhHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5ajRhXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5ajRhnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="blocks" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5Q3KAHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_malAsXK0Ee6hM-MRWptNsQ" name="Generics">
+        <modelElement href="BlockBreaker-core.uml#_5Q3xEHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_malnwHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q4YIHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5ajRh3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5ajRiHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5a5PwHKPEe6hM-MRWptNsQ" source="_5bDn0HKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SBAkXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5a_9cXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SBnoHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5a_WYHKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5a_WYXKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SBAknKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bByoHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bBLkHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5a_9cHKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="color" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5Q93snKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_malnwXK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q-ewXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bByonKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bByoXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5bfssHKPEe6hM-MRWptNsQ" source="_5bqEwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SDc0HKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5bj-IXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SED4HKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5bjXEHKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5bjXEXKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SDc0XKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5blzUXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5blzUHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5bj-IHKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="batch" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RBiEHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mamO0HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RBiEXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bmaYXKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bmaYHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5bgTwHKPEe6hM-MRWptNsQ" source="_5bqEwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SED4XKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5bklMXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SEq8HKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5bj-InKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5bj-I3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SED4nKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bmaZHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bmaY3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5bklMHKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="font" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RCJIHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_manc8HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RCJIXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bmaZnKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bmaZXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5bgTwXKPEe6hM-MRWptNsQ" source="_5bqEwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SEq8XKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5blMQHKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SFSAHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5bklMnKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5bklM3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SEq8nKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bnBcnKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bnBcXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5bklNHKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="camera" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RCJInKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_maorEHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RCwMHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bnBdHKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bnBc3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5bpdsHKPEe6hM-MRWptNsQ" sourceAnchor="318.0,252.0" targetAnchor="75.0,0.0" target="_5cnHAHKPEe6hM-MRWptNsQ" source="_5bqEwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SCOsHKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5bpdsXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SC1wHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5bpdsnKPEe6hM-MRWptNsQ" text="">
+      <visualProperties xmi:id="_56XaAHKPEe6hM-MRWptNsQ" position="-44.0,17.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5bpds3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SCOsXKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56U9wnKPEe6hM-MRWptNsQ" position="-17.0,26.0"/>
+      <visibility xmi:id="_5bpdtHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bpdtXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5bpdtnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="game" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RAT8HKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56XaAXKPEe6hM-MRWptNsQ" position="2.0,-71.0"/>
+      <stereotypes xmi:id="_mapSIHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RA7AHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bpdt3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bpduHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5b8YoHKPEe6hM-MRWptNsQ" source="_5b8_sXKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SPqEHKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5b8YoXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SQRIHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5b8YonKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5b8Yo3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SPqEXKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5b8YpHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5b8YpXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5b8YpnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="area" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RSAwHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5b8Yp3KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5b8_sHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5ciOgHKPEe6hM-MRWptNsQ" source="_5cnHAHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5R_ycHKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5ckqwXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SAZgHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5ckDsHKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5ckDsXKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5R_ycXKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5clR03KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5clR0nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5ckqwHKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="batch" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5Q60YHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5cl44XKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5cl44HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5ci1kHKPEe6hM-MRWptNsQ" source="_5cnHAHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SAZgXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5clR0XKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SBAkHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5ckqwnKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5ckqw3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SAZgnKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5cl443KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5cl44nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5clR0HKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="font" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5Q60YXKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5cmf8HKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5cl45HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5cwQ8HKPEe6hM-MRWptNsQ" sourceAnchor="0.0,241.0" targetAnchor="155.0,74.0" target="_5cnHAHKPEe6hM-MRWptNsQ" source="_5dLuwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SF5EHKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5c1JcnKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SGgIHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5c0iYHKPEe6hM-MRWptNsQ" text="">
+      <visualProperties xmi:id="_56Z2QXKPEe6hM-MRWptNsQ" position="-32.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5c1JcHKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SF5EXKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56Z2QHKPEe6hM-MRWptNsQ" position="-30.0,2.0"/>
+      <visibility xmi:id="_5c-TYXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5c-TYHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5c1JcXKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="game" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RDXQHKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56Z2QnKPEe6hM-MRWptNsQ" position="32.0,-46.999999999999886"/>
+      <stereotypes xmi:id="_maruYHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RD-UHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5c-TY3KPEe6hM-MRWptNsQ" label="~"/>
+      <cardinality xmi:id="_5c-TYnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5cyGIHKPEe6hM-MRWptNsQ" sourceAnchor="224.0,0.0" targetAnchor="170.0,175.0" target="_5b8_sXKPEe6hM-MRWptNsQ" source="_5dLuwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SKKgHKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5c2-pHKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SKxkHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5c2-oXKPEe6hM-MRWptNsQ" text="">
+      <visualProperties xmi:id="_56euwHKPEe6hM-MRWptNsQ" position="2.5,-8.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5c2-onKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SKKgXKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56cSgHKPEe6hM-MRWptNsQ" position="-16.5,-75.19999999999999"/>
+      <visibility xmi:id="_5dB9wXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dB9wHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5c2-o3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="pad" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RHosXKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56euwXKPEe6hM-MRWptNsQ" position="-36.5,30.200000000000017"/>
+      <stereotypes xmi:id="_masVcHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RIPwHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dB9w3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dB9wnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5czUQHKPEe6hM-MRWptNsQ" sourceAnchor="148.0,386.0" targetAnchor="283.0,0.0" target="_5bDn0HKPEe6hM-MRWptNsQ" source="_5dLuwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SLYoXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5c4MwXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SL_sHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5c3lsXKPEe6hM-MRWptNsQ" text="">
+      <visualProperties xmi:id="_56hLAHKPEe6hM-MRWptNsQ" position="2.0,-1.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5c3lsnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SLYonKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56euwnKPEe6hM-MRWptNsQ" position="2.0,34.0"/>
+      <visibility xmi:id="_5dCk03KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dCk0nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5c4MwHKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="bolas" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RL6IHKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56hLAXKPEe6hM-MRWptNsQ" position="-45.0,-80.0"/>
+      <stereotypes xmi:id="_mas8gHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RL6IXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dCk1XKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dCk1HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5c1wgHKPEe6hM-MRWptNsQ" source="_5dLuwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SGgIXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5c_hgHKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SHHMHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5c-6cXKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5c-6cnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SGgInKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dFBEHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dEaAHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5c-6c3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="camera" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RElYHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_matjkHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RElYXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dFBEnKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dFBEXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5c1wgXKPEe6hM-MRWptNsQ" source="_5dLuwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SHHMXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5dAIkHKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SHuQHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5c_hgXKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5c_hgnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SHHMnKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dFoIHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dFBFHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5c_hg3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="batch" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RFMcHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mauxsHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RFMcXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dFoInKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dFoIXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5c2XkHKPEe6hM-MRWptNsQ" source="_5dLuwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SHuQXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5dAvoHKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SIVUHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5dAIkXKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5dAIknKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SHuQnKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dFoJXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dFoJHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5dAIk3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="font" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RFzgHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mav_0HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RFzgXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dGPMXKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dGPMHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5c2XkXKPEe6hM-MRWptNsQ" source="_5dLuwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SIVUXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5dBWsHKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SI8YHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5dAvoXKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5dAvonKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SIVUnKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dGPNHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dGPM3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5dAvo3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="shape" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RGakHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mawm4HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RGakXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dGPNnKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dGPNXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5c2-oHKPEe6hM-MRWptNsQ" sourceAnchor="355.0,11.0" targetAnchor="0.0,179.0" target="_5dzZ0HKPEe6hM-MRWptNsQ" source="_5dLuwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SI8YXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5dBWtHKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SJjcHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5dBWsXKPEe6hM-MRWptNsQ" text="">
+      <visualProperties xmi:id="_56jnQHKPEe6hM-MRWptNsQ" position="-8.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5dBWsnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SI8YnKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56hLAnKPEe6hM-MRWptNsQ" position="13.0,-47.0"/>
+      <visibility xmi:id="_5dG2QnKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dG2QXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5dBWs3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="ball" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RHBoHKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56jnQXKPEe6hM-MRWptNsQ" position="-59.0,-47.0"/>
+      <stereotypes xmi:id="_mawm4XK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RHosHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dG2RHKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dG2Q3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5c3lsHKPEe6hM-MRWptNsQ" source="_5dLuwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SKxkXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5dCk0XKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SLYoHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5dB9xXKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5dB9xnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SKxknKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dHdUXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dHdUHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5dCk0HKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="blocks" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RIPwXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_max1AHK0Ee6hM-MRWptNsQ" name="Generics">
+        <modelElement href="BlockBreaker-core.uml#_5RI20HKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_max1AXK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RJd4XKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dIEYXKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dIEYHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5dsFEHKPEe6hM-MRWptNsQ" source="_5dzZ0HKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SQRIXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5dw9kXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SQ4MHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5dwWgHKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5dwWgXKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SQRInKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dyLsXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dyLsHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5dw9kHKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="color" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RVEEXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_maycEHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RVrIHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dyLs3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dyLsnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5eEfkHKPEe6hM-MRWptNsQ" sourceAnchor="436.0,112.0" targetAnchor="0.0,76.0" target="_5cnHAHKPEe6hM-MRWptNsQ" source="_5eQs0HKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SL_sXKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5eG70HKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SMmwHKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5eGUwHKPEe6hM-MRWptNsQ" text="">
+      <visualProperties xmi:id="_56mDgXKPEe6hM-MRWptNsQ" position="-19.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_5eGUwXKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SL_snKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56mDgHKPEe6hM-MRWptNsQ" position="12.0,2.0"/>
+      <visibility xmi:id="_5eJ_IXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5eJ_IHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5eGUwnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="game" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RNIQHKPEe6hM-MRWptNsQ"/>
+      <visualProperties xmi:id="_56mDgnKPEe6hM-MRWptNsQ" position="-69.0,-47.0"/>
+      <stereotypes xmi:id="_mazDIHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RNvUHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5eJ_I3KPEe6hM-MRWptNsQ" label="~"/>
+      <cardinality xmi:id="_5eJ_InKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5eG70XKPEe6hM-MRWptNsQ" source="_5eQs0HKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SNN0HKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5eKmMXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SN04HKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5eJ_JXKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5eJ_JnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SNN0XKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5eNCcXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5eNCcHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5eKmMHKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="batch" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RNvUXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mazqMHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5ROWYHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5eNpgXKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5eNpgHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5eG70nKPEe6hM-MRWptNsQ" source="_5eQs0HKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SN04XKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5eKmNXKPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SOb8HKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5eKmMnKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5eKmM3KPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SN04nKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5eNphHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5eNpg3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5eKmNHKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="font" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5ROWYXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_ma04UHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RO9cHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5eOQkXKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5eOQkHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5eG703KPEe6hM-MRWptNsQ" source="_5eQs0HKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5SOb8XKPEe6hM-MRWptNsQ"/>
+    <stereotypes xmi:id="_5eLNQ3KPEe6hM-MRWptNsQ" name="Reference">
+      <modelElement href="BlockBreaker-core.uml#_5SPDAXKPEe6hM-MRWptNsQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5eLNQHKPEe6hM-MRWptNsQ" text=""/>
+    <sourceRole xmi:id="_5eLNQXKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="">
+      <modelElement href="BlockBreaker-core.uml#_5SPDAHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5eOQlHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5eOQk3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5eLNQnKPEe6hM-MRWptNsQ" aggregationKind="NONE" name="camera" navigable="true">
+      <modelElement href="BlockBreaker-core.uml#_5RO9cXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_ma1fYHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RPkgHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5eO3oXKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5eO3oHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5dLuwHKPEe6hM-MRWptNsQ" name="GameScreen" associationsOut="_5cwQ8HKPEe6hM-MRWptNsQ _5cyGIHKPEe6hM-MRWptNsQ _5czUQHKPEe6hM-MRWptNsQ _5c1wgHKPEe6hM-MRWptNsQ _5c1wgXKPEe6hM-MRWptNsQ _5c2XkHKPEe6hM-MRWptNsQ _5c2XkXKPEe6hM-MRWptNsQ _5c2-oHKPEe6hM-MRWptNsQ _5c3lsHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5LHHUHKPEe6hM-MRWptNsQ"/>
+    <visualProperties xmi:id="_5dLuwXKPEe6hM-MRWptNsQ" position="462.0,369.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_5dLuwnKPEe6hM-MRWptNsQ" label="+"/>
+    <attributes xmi:id="_5dLuw3KPEe6hM-MRWptNsQ" name="game">
+      <modelElement href="BlockBreaker-core.uml#_5RDXQHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mcFckHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcGqsHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcjWoHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5dLuxXKPEe6hM-MRWptNsQ" label="~"/>
+      <cardinality xmi:id="_5dLuxnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dLux3KPEe6hM-MRWptNsQ" name="BlockBreakerMenu">
+        <modelElement href="BlockBreaker-core.uml#_5KgDUHKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dLuyHKPEe6hM-MRWptNsQ" name="camera">
+      <modelElement href="BlockBreaker-core.uml#_5RElYHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mcMKQHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcN_cHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mckkwHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5dLuynKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dLuy3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dLuzHKPEe6hM-MRWptNsQ" name="OrthographicCamera">
+        <modelElement href="BlockBreaker-core.uml#_5O-6sXKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dLuzXKPEe6hM-MRWptNsQ" name="batch">
+      <modelElement href="BlockBreaker-core.uml#_5RFMcHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mcPNkHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcP0oHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mclL0HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5dLuz3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dLu0HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dLu0XKPEe6hM-MRWptNsQ" name="SpriteBatch">
+        <modelElement href="BlockBreaker-core.uml#_5PB-AXKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dLu0nKPEe6hM-MRWptNsQ" name="font">
+      <modelElement href="BlockBreaker-core.uml#_5RFzgHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mcRCwHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcRp0HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcmZ8HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5dLu1HKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dLu1XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dLu1nKPEe6hM-MRWptNsQ" name="BitmapFont">
+        <modelElement href="BlockBreaker-core.uml#_5PAI0XKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dLu13KPEe6hM-MRWptNsQ" name="shape">
+      <modelElement href="BlockBreaker-core.uml#_5RGakHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mcTfAHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcUtIHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcnoEHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5dLu2XKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dLu2nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dLu23KPEe6hM-MRWptNsQ" name="ShapeRenderer">
+        <modelElement href="BlockBreaker-core.uml#_5OucAHKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dLu3HKPEe6hM-MRWptNsQ" name="ball">
+      <modelElement href="BlockBreaker-core.uml#_5RHBoHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mcV7QHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcXJYHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mco2MHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5dLu3nKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dLu33KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dLu4HKPEe6hM-MRWptNsQ" name="PingBall">
+        <modelElement href="BlockBreaker-core.uml#_5L1gEHKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dLu4XKPEe6hM-MRWptNsQ" name="pad">
+      <modelElement href="BlockBreaker-core.uml#_5RHosXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mcH40HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcIf4HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcqEUHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5dLu43KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dLu5HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dLu5XKPEe6hM-MRWptNsQ" name="Paddle">
+        <modelElement href="BlockBreaker-core.uml#_5LwnkHKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dLu5nKPEe6hM-MRWptNsQ" defaultValue="new ArrayList&lt;>()" name="blocks">
+      <modelElement href="BlockBreaker-core.uml#_5RIPwXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mcXwcHK0Ee6hM-MRWptNsQ" name="Generics"/>
+      <stereotypes xmi:id="_mcYXgHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcY-kHK0Ee6hM-MRWptNsQ" name="Generics"/>
+      <stereotypes xmi:id="_mcZloHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcrScHK0Ee6hM-MRWptNsQ" name="Generics"/>
+      <stereotypes xmi:id="_mcr5gHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5dLu6XKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dLu6nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dLu63KPEe6hM-MRWptNsQ" name="ArrayList">
+        <modelElement href="BlockBreaker-core.uml#_5O3l8HKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dLu7HKPEe6hM-MRWptNsQ" name="vidas">
+      <modelElement href="BlockBreaker-core.uml#_5RKE8HKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dLu7XKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RKE8XKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dLu7nKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dLu73KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dLu8HKPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dLu8XKPEe6hM-MRWptNsQ" name="puntaje">
+      <modelElement href="BlockBreaker-core.uml#_5RKsAHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dLu8nKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RKsAXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dLu83KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dLu9HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dLu9XKPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dLu9nKPEe6hM-MRWptNsQ" name="nivel">
+      <modelElement href="BlockBreaker-core.uml#_5RLTEHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dLu93KPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RLTEXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dLu-HKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dLu-XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dLu-nKPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dLu-3KPEe6hM-MRWptNsQ" name="bolas">
+      <modelElement href="BlockBreaker-core.uml#_5RL6IHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mcJuAHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcK8IHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mctusHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5dLu_XKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dLu_nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dLu_3KPEe6hM-MRWptNsQ" name="Bolas">
+        <modelElement href="BlockBreaker-core.uml#_5Kli4HKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5dLvAHKPEe6hM-MRWptNsQ" name="crearBloques">
+      <modelElement href="BlockBreaker-core.uml#_5LLYwHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dLvAXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dLvAnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5dLvA3KPEe6hM-MRWptNsQ" name="filas">
+        <modelElement href="BlockBreaker-core.uml#_5LLYwXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dLvBHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dLvBXKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5dLvBnKPEe6hM-MRWptNsQ" name="dibujaTextos">
+      <modelElement href="BlockBreaker-core.uml#_5LL_0HKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dLvB3KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dLvCHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5dLvCXKPEe6hM-MRWptNsQ" name="render">
+      <modelElement href="BlockBreaker-core.uml#_5LMm4HKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dLvCnKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LN1AHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5dLvC3KPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LN1AXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dLvDHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dLvDXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5dLvDnKPEe6hM-MRWptNsQ" name="delta">
+        <modelElement href="BlockBreaker-core.uml#_5LNN8HKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dLvD3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dLvEHKPEe6hM-MRWptNsQ" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5dLvEXKPEe6hM-MRWptNsQ" name="show">
+      <modelElement href="BlockBreaker-core.uml#_5LOcEXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dLvEnKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LOcEnKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5dLvE3KPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LPDIHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dLvFHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dLvFXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5dLvFnKPEe6hM-MRWptNsQ" name="resize">
+      <modelElement href="BlockBreaker-core.uml#_5LPqMHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dLvF3KPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LQRQHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5dLvGHKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LQRQXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dLvGXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dLvGnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5dLvG3KPEe6hM-MRWptNsQ" name="width">
+        <modelElement href="BlockBreaker-core.uml#_5LPqMXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dLvHHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dLvHXKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5dLvHnKPEe6hM-MRWptNsQ" name="height">
+        <modelElement href="BlockBreaker-core.uml#_5LPqMnKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dLvH3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dLvIHKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5dLvIXKPEe6hM-MRWptNsQ" name="pause">
+      <modelElement href="BlockBreaker-core.uml#_5LQ4UHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dLvInKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LQ4UXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5dLvI3KPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LRfYHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dLvJHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dLvJXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5dLvJnKPEe6hM-MRWptNsQ" name="resume">
+      <modelElement href="BlockBreaker-core.uml#_5LRfYnKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dLvJ3KPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LRfY3KPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5dLvKHKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LSGcHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dLvKXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dLvKnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5dLvK3KPEe6hM-MRWptNsQ" name="hide">
+      <modelElement href="BlockBreaker-core.uml#_5LStgHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dLvLHKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LTUkHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5dLvLXKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LTUkXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dLvLnKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dLvL3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5dLvMHKPEe6hM-MRWptNsQ" name="dispose">
+      <modelElement href="BlockBreaker-core.uml#_5LT7oHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dLvMXKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LT7oXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5dLvMnKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LUisHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dLvM3KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dLvNHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5dLvNXKPEe6hM-MRWptNsQ" name="GameScreen">
+      <modelElement href="BlockBreaker-core.uml#_5Poa8HKPEe6hM-MRWptNsQ"/>
+      <keywords xmi:id="_5dLvNnKPEe6hM-MRWptNsQ" keyword="create"/>
+      <visibility xmi:id="_5dLvN3KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dLvOHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5dLvOXKPEe6hM-MRWptNsQ">
+        <modelElement href="BlockBreaker-core.uml#_5PpCAnKPEe6hM-MRWptNsQ"/>
+        <type xmi:id="_5dLvOnKPEe6hM-MRWptNsQ" name="GameScreen">
+          <modelElement href="BlockBreaker-core.uml#_5LHHUHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5dLvO3KPEe6hM-MRWptNsQ" name="game">
+        <modelElement href="BlockBreaker-core.uml#_5Poa8XKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dLvPHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dLvPXKPEe6hM-MRWptNsQ" name="BlockBreakerMenu">
+          <modelElement href="BlockBreaker-core.uml#_5KgDUHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5cnHAHKPEe6hM-MRWptNsQ" name="BlockBreakerMenu" associationsIn="_5bpdsHKPEe6hM-MRWptNsQ _5cwQ8HKPEe6hM-MRWptNsQ _5eEfkHKPEe6hM-MRWptNsQ" associationsOut="_5ciOgHKPEe6hM-MRWptNsQ _5ci1kHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5KgDUHKPEe6hM-MRWptNsQ"/>
+    <visualProperties xmi:id="_5cnHAXKPEe6hM-MRWptNsQ" position="75.0,536.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_5cnHAnKPEe6hM-MRWptNsQ" label="+"/>
+    <attributes xmi:id="_5cnHA3KPEe6hM-MRWptNsQ" name="batch">
+      <modelElement href="BlockBreaker-core.uml#_5Q60YHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5cnHBHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5cnHBXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5cnHBnKPEe6hM-MRWptNsQ" name="SpriteBatch">
+        <modelElement href="BlockBreaker-core.uml#_5PB-AXKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5cnHB3KPEe6hM-MRWptNsQ" name="font">
+      <modelElement href="BlockBreaker-core.uml#_5Q60YXKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5cnHCHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5cnHCXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5cnHCnKPEe6hM-MRWptNsQ" name="BitmapFont">
+        <modelElement href="BlockBreaker-core.uml#_5PAI0XKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5cnHC3KPEe6hM-MRWptNsQ" name="higherScore">
+      <modelElement href="BlockBreaker-core.uml#_5Q7bcHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5cnHDHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5cnHDXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5cnHDnKPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5cnHD3KPEe6hM-MRWptNsQ" name="create">
+      <modelElement href="BlockBreaker-core.uml#_5KhRcHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5cnHEHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5cnHEXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5cnHEnKPEe6hM-MRWptNsQ" name="render">
+      <modelElement href="BlockBreaker-core.uml#_5Kh4gHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5cnHE3KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5cnHFHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5cnHFXKPEe6hM-MRWptNsQ" name="dispose">
+      <modelElement href="BlockBreaker-core.uml#_5KifkHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5cnHFnKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5cnHF3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5bDn0HKPEe6hM-MRWptNsQ" name="Bolas" associationsIn="_5czUQHKPEe6hM-MRWptNsQ" associationsOut="_5a5PwHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5Kli4HKPEe6hM-MRWptNsQ"/>
+    <visualProperties xmi:id="_5bDn0XKPEe6hM-MRWptNsQ" position="327.0,969.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_5bDn0nKPEe6hM-MRWptNsQ" label="+"/>
+    <attributes xmi:id="_5bDn03KPEe6hM-MRWptNsQ" name="x">
+      <modelElement href="BlockBreaker-core.uml#_5Q7bcXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5bDn1HKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q8CgHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bDn1XKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bDn1nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5bDn13KPEe6hM-MRWptNsQ" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5bDn2HKPEe6hM-MRWptNsQ" name="y">
+      <modelElement href="BlockBreaker-core.uml#_5Q8CgXKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bDn2XKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bDn2nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5bDn23KPEe6hM-MRWptNsQ" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5bDn3HKPEe6hM-MRWptNsQ" name="size">
+      <modelElement href="BlockBreaker-core.uml#_5Q8pkHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5bDn3XKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q8pkXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bDn3nKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bDn33KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5bDn4HKPEe6hM-MRWptNsQ" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5bDn4XKPEe6hM-MRWptNsQ" name="xSpeed">
+      <modelElement href="BlockBreaker-core.uml#_5Q9QoHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5bDn4nKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q9QoXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bDn43KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bDn5HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5bDn5XKPEe6hM-MRWptNsQ" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5bDn5nKPEe6hM-MRWptNsQ" name="ySpeed">
+      <modelElement href="BlockBreaker-core.uml#_5Q93sHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5bDn53KPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q93sXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bDn6HKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bDn6XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5bDn6nKPEe6hM-MRWptNsQ" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5bDn63KPEe6hM-MRWptNsQ" defaultValue="Color.WHITE" name="color">
+      <modelElement href="BlockBreaker-core.uml#_5Q93snKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mb1k8HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mb2zEHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcz1UHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5bDn7XKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bDn7nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5bDn73KPEe6hM-MRWptNsQ" name="Color">
+        <modelElement href="BlockBreaker-core.uml#_5OyGYXKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5bDn8HKPEe6hM-MRWptNsQ" name="estaQuieto">
+      <modelElement href="BlockBreaker-core.uml#_5Q_F0HKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5bDn8XKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q_F0XKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bDn8nKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bDn83KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5bDn9HKPEe6hM-MRWptNsQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5bDn9XKPEe6hM-MRWptNsQ" defaultValue="false" name="destroyed">
+      <modelElement href="BlockBreaker-core.uml#_5Q_s4HKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bDn9nKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bDn93KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5bDn-HKPEe6hM-MRWptNsQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5bDn-XKPEe6hM-MRWptNsQ" name="Bolas">
+      <modelElement href="BlockBreaker-core.uml#_5KomMHKPEe6hM-MRWptNsQ"/>
+      <keywords xmi:id="_5bDn-nKPEe6hM-MRWptNsQ" keyword="create"/>
+      <visibility xmi:id="_5bDn-3KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bDn_HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5bDn_XKPEe6hM-MRWptNsQ">
+        <modelElement href="BlockBreaker-core.uml#_5Kp0VHKPEe6hM-MRWptNsQ"/>
+        <type xmi:id="_5bDn_nKPEe6hM-MRWptNsQ" name="Bolas">
+          <modelElement href="BlockBreaker-core.uml#_5Kli4HKPEe6hM-MRWptNsQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5bDn_3KPEe6hM-MRWptNsQ" name="x">
+        <modelElement href="BlockBreaker-core.uml#_5KpNQHKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoAHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoAXKPEe6hM-MRWptNsQ" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5bDoAnKPEe6hM-MRWptNsQ" name="y">
+        <modelElement href="BlockBreaker-core.uml#_5KpNQXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoA3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoBHKPEe6hM-MRWptNsQ" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5bDoBXKPEe6hM-MRWptNsQ" name="size">
+        <modelElement href="BlockBreaker-core.uml#_5KpNQnKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoBnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoB3KPEe6hM-MRWptNsQ" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5bDoCHKPEe6hM-MRWptNsQ" name="xSpeed">
+        <modelElement href="BlockBreaker-core.uml#_5KpNQ3KPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoCXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoCnKPEe6hM-MRWptNsQ" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5bDoC3KPEe6hM-MRWptNsQ" name="ySpeed">
+        <modelElement href="BlockBreaker-core.uml#_5Kp0UHKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoDHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoDXKPEe6hM-MRWptNsQ" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5bDoDnKPEe6hM-MRWptNsQ" name="iniciaQuieto">
+        <modelElement href="BlockBreaker-core.uml#_5Kp0UXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoD3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoEHKPEe6hM-MRWptNsQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5bDoEXKPEe6hM-MRWptNsQ" name="estaQuieto">
+      <modelElement href="BlockBreaker-core.uml#_5KqbYHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bDoEnKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bDoE3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5bDoFHKPEe6hM-MRWptNsQ">
+        <modelElement href="BlockBreaker-core.uml#_5KrCcHKPEe6hM-MRWptNsQ"/>
+        <type xmi:id="_5bDoFXKPEe6hM-MRWptNsQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5bDoFnKPEe6hM-MRWptNsQ" name="setEstaQuieto">
+      <modelElement href="BlockBreaker-core.uml#_5KrpgHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bDoF3KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bDoGHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5bDoGXKPEe6hM-MRWptNsQ" name="bb">
+        <modelElement href="BlockBreaker-core.uml#_5KrpgXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoGnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoG3KPEe6hM-MRWptNsQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5bDoHHKPEe6hM-MRWptNsQ" name="setXY">
+      <modelElement href="BlockBreaker-core.uml#_5KsQkHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bDoHXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bDoHnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5bDoH3KPEe6hM-MRWptNsQ" name="x">
+        <modelElement href="BlockBreaker-core.uml#_5KsQkXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoIHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoIXKPEe6hM-MRWptNsQ" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5bDoInKPEe6hM-MRWptNsQ" name="y">
+        <modelElement href="BlockBreaker-core.uml#_5Ks3oHKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoI3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoJHKPEe6hM-MRWptNsQ" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5bDoJXKPEe6hM-MRWptNsQ" name="update">
+      <modelElement href="BlockBreaker-core.uml#_5KtesHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bDoJnKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bDoJ3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5bDoKHKPEe6hM-MRWptNsQ" name="checkCollision">
+      <modelElement href="BlockBreaker-core.uml#_5PROkHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bDoKXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bDoKnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5bDoK3KPEe6hM-MRWptNsQ" name="paddle">
+        <modelElement href="BlockBreaker-core.uml#_5PR1oHKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoLHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoLXKPEe6hM-MRWptNsQ" name="Paddle">
+          <modelElement href="BlockBreaker-core.uml#_5LwnkHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5bDoLnKPEe6hM-MRWptNsQ" name="collidesWith">
+      <modelElement href="BlockBreaker-core.uml#_5PScsHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bDoL3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bDoMHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5bDoMXKPEe6hM-MRWptNsQ">
+        <modelElement href="BlockBreaker-core.uml#_5PTDwHKPEe6hM-MRWptNsQ"/>
+        <type xmi:id="_5bDoMnKPEe6hM-MRWptNsQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5bDoM3KPEe6hM-MRWptNsQ" name="pp">
+        <modelElement href="BlockBreaker-core.uml#_5PScsXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoNHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoNXKPEe6hM-MRWptNsQ" name="Paddle">
+          <modelElement href="BlockBreaker-core.uml#_5LwnkHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5bDoNnKPEe6hM-MRWptNsQ" name="checkCollision">
+      <modelElement href="BlockBreaker-core.uml#_5PTq0HKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bDoN3KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bDoOHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5bDoOXKPEe6hM-MRWptNsQ" name="block">
+        <modelElement href="BlockBreaker-core.uml#_5PTq0XKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoOnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoO3KPEe6hM-MRWptNsQ" name="Block">
+          <modelElement href="BlockBreaker-core.uml#_5KDXYHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5bDoPHKPEe6hM-MRWptNsQ" name="collidesWith">
+      <modelElement href="BlockBreaker-core.uml#_5PUR4HKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bDoPXKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bDoPnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5bDoP3KPEe6hM-MRWptNsQ">
+        <modelElement href="BlockBreaker-core.uml#_5PU48HKPEe6hM-MRWptNsQ"/>
+        <type xmi:id="_5bDoQHKPEe6hM-MRWptNsQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5bDoQXKPEe6hM-MRWptNsQ" name="bb">
+        <modelElement href="BlockBreaker-core.uml#_5PUR4XKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoQnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoQ3KPEe6hM-MRWptNsQ" name="Block">
+          <modelElement href="BlockBreaker-core.uml#_5KDXYHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5bDoRHKPEe6hM-MRWptNsQ" name="draw">
+      <modelElement href="BlockBreaker-core.uml#_5QTJUHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5bDoRXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bDoRnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5bDoR3KPEe6hM-MRWptNsQ" name="shapeRenderer">
+        <modelElement href="BlockBreaker-core.uml#_5QTJUXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bDoSHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bDoSXKPEe6hM-MRWptNsQ" name="ShapeRenderer">
+          <modelElement href="BlockBreaker-core.uml#_5OucAHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5aBGCXKPEe6hM-MRWptNsQ" name="Block" associationsOut="_5aBGAHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5KDXYHKPEe6hM-MRWptNsQ"/>
+    <visualProperties xmi:id="_5aBGCnKPEe6hM-MRWptNsQ" position="1010.0,676.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_5aBGC3KPEe6hM-MRWptNsQ" label="+"/>
+    <attributes xmi:id="_5aBGDHKPEe6hM-MRWptNsQ" name="x">
+      <modelElement href="BlockBreaker-core.uml#_5QuAEHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5aBGDXKPEe6hM-MRWptNsQ" name="MultiDeclaration">
+        <modelElement href="BlockBreaker-core.uml#_5QunIHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5aBGDnKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Qv1QHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5aBGD3KPEe6hM-MRWptNsQ" label="~"/>
+      <cardinality xmi:id="_5aBGEHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5aBGEXKPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5aBGEnKPEe6hM-MRWptNsQ" name="cc">
+      <modelElement href="BlockBreaker-core.uml#_5QxDYHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mbfmsHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mbhb4HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mc1DcHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5aBGFHKPEe6hM-MRWptNsQ" label="~"/>
+      <cardinality xmi:id="_5aBGFXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5aBGFnKPEe6hM-MRWptNsQ" name="Color">
+        <modelElement href="BlockBreaker-core.uml#_5OyGYXKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5aBGF3KPEe6hM-MRWptNsQ" name="destroyed">
+      <modelElement href="BlockBreaker-core.uml#_5QxqcXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5aBGGHKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5QyRgHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5aBGGXKPEe6hM-MRWptNsQ" label="~"/>
+      <cardinality xmi:id="_5aBGGnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5aBGG3KPEe6hM-MRWptNsQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5aBGHHKPEe6hM-MRWptNsQ" name="y">
+      <modelElement href="BlockBreaker-core.uml#_5RpNIHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5aBGHXKPEe6hM-MRWptNsQ" name="MultiDeclaration">
+        <modelElement href="BlockBreaker-core.uml#_5Rp0MHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5aBGHnKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RqbQHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5aBGH3KPEe6hM-MRWptNsQ" label="~"/>
+      <cardinality xmi:id="_5aBGIHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5aBGIXKPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5aBGInKPEe6hM-MRWptNsQ" name="width">
+      <modelElement href="BlockBreaker-core.uml#_5RqbQXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5aBGI3KPEe6hM-MRWptNsQ" name="MultiDeclaration">
+        <modelElement href="BlockBreaker-core.uml#_5RqbQnKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5aBGJHKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RrCUHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5aBGJXKPEe6hM-MRWptNsQ" label="~"/>
+      <cardinality xmi:id="_5aBGJnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5aBGJ3KPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5aBGKHKPEe6hM-MRWptNsQ" name="height">
+      <modelElement href="BlockBreaker-core.uml#_5RrCUXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5aBGKXKPEe6hM-MRWptNsQ" name="MultiDeclaration">
+        <modelElement href="BlockBreaker-core.uml#_5RrCUnKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5aBGKnKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RrpYHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5aBGK3KPEe6hM-MRWptNsQ" label="~"/>
+      <cardinality xmi:id="_5aBGLHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5aBGLXKPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5aBGLnKPEe6hM-MRWptNsQ" name="Block">
+      <modelElement href="BlockBreaker-core.uml#_5KI28HKPEe6hM-MRWptNsQ"/>
+      <keywords xmi:id="_5aBGL3KPEe6hM-MRWptNsQ" keyword="create"/>
+      <visibility xmi:id="_5aBGMHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5aBGMXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5aBGMnKPEe6hM-MRWptNsQ">
+        <modelElement href="BlockBreaker-core.uml#_5KLTMnKPEe6hM-MRWptNsQ"/>
+        <type xmi:id="_5aBGM3KPEe6hM-MRWptNsQ" name="Block">
+          <modelElement href="BlockBreaker-core.uml#_5KDXYHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5aBGNHKPEe6hM-MRWptNsQ" name="x">
+        <modelElement href="BlockBreaker-core.uml#_5KJeAHKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5aBGNXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5aBGNnKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5aBGN3KPEe6hM-MRWptNsQ" name="y">
+        <modelElement href="BlockBreaker-core.uml#_5KJeAXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5aBGOHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5aBGOXKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5aBGOnKPEe6hM-MRWptNsQ" name="width">
+        <modelElement href="BlockBreaker-core.uml#_5KKFEHKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5aBGO3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5aBGPHKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5aBGPXKPEe6hM-MRWptNsQ" name="height">
+        <modelElement href="BlockBreaker-core.uml#_5KKsIHKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5aBGPnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5aBGP3KPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5aBGQHKPEe6hM-MRWptNsQ" name="draw">
+      <modelElement href="BlockBreaker-core.uml#_5QJYUHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5aBGQXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5aBGQnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5aBGQ3KPEe6hM-MRWptNsQ" name="shape">
+        <modelElement href="BlockBreaker-core.uml#_5QJYUXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5aBGRHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5aBGRXKPEe6hM-MRWptNsQ" name="ShapeRenderer">
+          <modelElement href="BlockBreaker-core.uml#_5OucAHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5ajRiXKPEe6hM-MRWptNsQ" name="BlockBreakerGame" associationsOut="_5aQ9oHKPEe6hM-MRWptNsQ _5abVsHKPEe6hM-MRWptNsQ _5adK4HKPEe6hM-MRWptNsQ _5aeZAHKPEe6hM-MRWptNsQ _5afnIHKPEe6hM-MRWptNsQ _5ahcUHKPEe6hM-MRWptNsQ _5ajRgHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5KO9kHKPEe6hM-MRWptNsQ"/>
+    <visualProperties xmi:id="_5ajRinKPEe6hM-MRWptNsQ" position="1788.0,253.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_5ajRi3KPEe6hM-MRWptNsQ" label="+"/>
+    <attributes xmi:id="_5ajRjHKPEe6hM-MRWptNsQ" name="camera">
+      <modelElement href="BlockBreaker-core.uml#_5Qy4kHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mbm7cHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mboJkHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mc3fsHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5ajRjnKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5ajRj3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5ajRkHKPEe6hM-MRWptNsQ" name="OrthographicCamera">
+        <modelElement href="BlockBreaker-core.uml#_5O-6sXKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5ajRkXKPEe6hM-MRWptNsQ" name="batch">
+      <modelElement href="BlockBreaker-core.uml#_5QzfoXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mbpXsHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mbql0HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mc5U4HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5ajRk3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5ajRlHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5ajRlXKPEe6hM-MRWptNsQ" name="SpriteBatch">
+        <modelElement href="BlockBreaker-core.uml#_5PB-AXKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5ajRlnKPEe6hM-MRWptNsQ" name="font">
+      <modelElement href="BlockBreaker-core.uml#_5Q0GsXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mbrM4HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mbsbAHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mc6jAHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5ajRmHKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5ajRmXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5ajRmnKPEe6hM-MRWptNsQ" name="BitmapFont">
+        <modelElement href="BlockBreaker-core.uml#_5PAI0XKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5ajRm3KPEe6hM-MRWptNsQ" name="shape">
+      <modelElement href="BlockBreaker-core.uml#_5Q0twXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mbjREHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mblGQHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mc7xIHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5ajRnXKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5ajRnnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5ajRn3KPEe6hM-MRWptNsQ" name="ShapeRenderer">
+        <modelElement href="BlockBreaker-core.uml#_5OucAHKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5ajRoHKPEe6hM-MRWptNsQ" name="ball">
+      <modelElement href="BlockBreaker-core.uml#_5Q1U0XKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mbtpIHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mbu3QHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mc8_QHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5ajRonKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5ajRo3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5ajRpHKPEe6hM-MRWptNsQ" name="PingBall">
+        <modelElement href="BlockBreaker-core.uml#_5L1gEHKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5ajRpXKPEe6hM-MRWptNsQ" name="pad">
+      <modelElement href="BlockBreaker-core.uml#_5Q2i8HKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mbveUHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mbwFYHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mc9mUHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5ajRp3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5ajRqHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5ajRqXKPEe6hM-MRWptNsQ" name="Paddle">
+        <modelElement href="BlockBreaker-core.uml#_5LwnkHKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5ajRqnKPEe6hM-MRWptNsQ" defaultValue="new ArrayList&lt;>()" name="blocks">
+      <modelElement href="BlockBreaker-core.uml#_5Q3KAHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mbx6kHK0Ee6hM-MRWptNsQ" name="Generics"/>
+      <stereotypes xmi:id="_mbx6kXK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mbzIsHK0Ee6hM-MRWptNsQ" name="Generics"/>
+      <stereotypes xmi:id="_mbzIsXK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mc-NYHK0Ee6hM-MRWptNsQ" name="Generics"/>
+      <stereotypes xmi:id="_mc-NYXK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5ajRrXKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5ajRrnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5ajRr3KPEe6hM-MRWptNsQ" name="ArrayList">
+        <modelElement href="BlockBreaker-core.uml#_5O3l8HKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5ajRsHKPEe6hM-MRWptNsQ" name="vidas">
+      <modelElement href="BlockBreaker-core.uml#_5Q4YIXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5ajRsXKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q4_MHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5ajRsnKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5ajRs3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5ajRtHKPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5ajRtXKPEe6hM-MRWptNsQ" name="puntaje">
+      <modelElement href="BlockBreaker-core.uml#_5Q4_MXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5ajRtnKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q5mQHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5ajRt3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5ajRuHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5ajRuXKPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5ajRunKPEe6hM-MRWptNsQ" name="nivel">
+      <modelElement href="BlockBreaker-core.uml#_5Q5mQXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5ajRu3KPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Q6NUHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5ajRvHKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5ajRvXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5ajRvnKPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5ajRv3KPEe6hM-MRWptNsQ" name="create">
+      <modelElement href="BlockBreaker-core.uml#_5KSA4HKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5ajRwHKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5KTPAHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5ajRwXKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5KUdIHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5ajRwnKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5ajRw3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5ajRxHKPEe6hM-MRWptNsQ" name="crearBloques">
+      <modelElement href="BlockBreaker-core.uml#_5KVEMHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5ajRxXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5ajRxnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5ajRx3KPEe6hM-MRWptNsQ" name="filas">
+        <modelElement href="BlockBreaker-core.uml#_5KVEMXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5ajRyHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5ajRyXKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5ajRynKPEe6hM-MRWptNsQ" name="dibujaTextos">
+      <modelElement href="BlockBreaker-core.uml#_5KVrQHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5ajRy3KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5ajRzHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5ajRzXKPEe6hM-MRWptNsQ" name="render">
+      <modelElement href="BlockBreaker-core.uml#_5KWSUHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5ajRznKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5KW5YHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5ajRz3KPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5KXgcHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5ajR0HKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5ajR0XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5ajR0nKPEe6hM-MRWptNsQ" name="dispose">
+      <modelElement href="BlockBreaker-core.uml#_5KXgcnKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5ajR03KPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5KYHgHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5ajR1HKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5KYukHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5ajR1XKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5ajR1nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5dzZ0HKPEe6hM-MRWptNsQ" name="PingBall" associationsIn="_5afnIHKPEe6hM-MRWptNsQ _5c2-oHKPEe6hM-MRWptNsQ" associationsOut="_5dsFEHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5L1gEHKPEe6hM-MRWptNsQ"/>
+    <visualProperties xmi:id="_5dzZ0XKPEe6hM-MRWptNsQ" position="969.0,201.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_5dzZ0nKPEe6hM-MRWptNsQ" label="+"/>
+    <attributes xmi:id="_5dzZ03KPEe6hM-MRWptNsQ" name="x">
+      <modelElement href="BlockBreaker-core.uml#_5RSn0HKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dzZ1HKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RTO4HKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dzZ1XKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dzZ1nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dzZ13KPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dzZ2HKPEe6hM-MRWptNsQ" name="y">
+      <modelElement href="BlockBreaker-core.uml#_5RTO4XKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dzZ2XKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dzZ2nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dzZ23KPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dzZ3HKPEe6hM-MRWptNsQ" name="size">
+      <modelElement href="BlockBreaker-core.uml#_5RTO4nKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dzZ3XKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RT18HKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dzZ3nKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dzZ33KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dzZ4HKPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dzZ4XKPEe6hM-MRWptNsQ" name="xSpeed">
+      <modelElement href="BlockBreaker-core.uml#_5RT18XKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dzZ4nKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RUdAHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dzZ43KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dzZ5HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dzZ5XKPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dzZ5nKPEe6hM-MRWptNsQ" name="ySpeed">
+      <modelElement href="BlockBreaker-core.uml#_5RUdAXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dzZ53KPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RVEEHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dzZ6HKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dzZ6XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dzZ6nKPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dzZ63KPEe6hM-MRWptNsQ" defaultValue="Color.WHITE" name="color">
+      <modelElement href="BlockBreaker-core.uml#_5RVEEXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mcazwHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcba0HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mdACkHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5dzZ7XKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dzZ7nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dzZ73KPEe6hM-MRWptNsQ" name="Color">
+        <modelElement href="BlockBreaker-core.uml#_5OyGYXKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5dzZ8HKPEe6hM-MRWptNsQ" name="estaQuieto">
+      <modelElement href="BlockBreaker-core.uml#_5RWSMHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5dzZ8XKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5RW5QHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5dzZ8nKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dzZ83KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5dzZ9HKPEe6hM-MRWptNsQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5dzZ9XKPEe6hM-MRWptNsQ" name="PingBall">
+      <modelElement href="BlockBreaker-core.uml#_5L3VQHKPEe6hM-MRWptNsQ"/>
+      <keywords xmi:id="_5dzZ9nKPEe6hM-MRWptNsQ" keyword="create"/>
+      <visibility xmi:id="_5dzZ93KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dzZ-HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5dzZ-XKPEe6hM-MRWptNsQ">
+        <modelElement href="BlockBreaker-core.uml#_5L38VXKPEe6hM-MRWptNsQ"/>
+        <type xmi:id="_5dzZ-nKPEe6hM-MRWptNsQ" name="PingBall">
+          <modelElement href="BlockBreaker-core.uml#_5L1gEHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5dzZ-3KPEe6hM-MRWptNsQ" name="x">
+        <modelElement href="BlockBreaker-core.uml#_5L3VQXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzZ_HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzZ_XKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5dzZ_nKPEe6hM-MRWptNsQ" name="y">
+        <modelElement href="BlockBreaker-core.uml#_5L3VQnKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzZ_3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzaAHKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5dzaAXKPEe6hM-MRWptNsQ" name="size">
+        <modelElement href="BlockBreaker-core.uml#_5L3VQ3KPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzaAnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzaA3KPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5dzaBHKPEe6hM-MRWptNsQ" name="xSpeed">
+        <modelElement href="BlockBreaker-core.uml#_5L38UHKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzaBXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzaBnKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5dzaB3KPEe6hM-MRWptNsQ" name="ySpeed">
+        <modelElement href="BlockBreaker-core.uml#_5L38UXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzaCHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzaCXKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5dzaCnKPEe6hM-MRWptNsQ" name="iniciaQuieto">
+        <modelElement href="BlockBreaker-core.uml#_5L38UnKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzaC3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzaDHKPEe6hM-MRWptNsQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5dzaDXKPEe6hM-MRWptNsQ" name="estaQuieto">
+      <modelElement href="BlockBreaker-core.uml#_5L4jYHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dzaDnKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dzaD3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5dzaEHKPEe6hM-MRWptNsQ">
+        <modelElement href="BlockBreaker-core.uml#_5L4jYXKPEe6hM-MRWptNsQ"/>
+        <type xmi:id="_5dzaEXKPEe6hM-MRWptNsQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5dzaEnKPEe6hM-MRWptNsQ" name="setEstaQuieto">
+      <modelElement href="BlockBreaker-core.uml#_5L5KcHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dzaE3KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dzaFHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5dzaFXKPEe6hM-MRWptNsQ" name="bb">
+        <modelElement href="BlockBreaker-core.uml#_5L5KcXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzaFnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzaF3KPEe6hM-MRWptNsQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5dzaGHKPEe6hM-MRWptNsQ" name="setXY">
+      <modelElement href="BlockBreaker-core.uml#_5L5xgHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dzaGXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dzaGnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5dzaG3KPEe6hM-MRWptNsQ" name="x">
+        <modelElement href="BlockBreaker-core.uml#_5L5xgXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzaHHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzaHXKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5dzaHnKPEe6hM-MRWptNsQ" name="y">
+        <modelElement href="BlockBreaker-core.uml#_5L5xgnKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzaH3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzaIHKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5dzaIXKPEe6hM-MRWptNsQ" name="update">
+      <modelElement href="BlockBreaker-core.uml#_5L6YkHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dzaInKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dzaI3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5dzaJHKPEe6hM-MRWptNsQ" name="checkCollision">
+      <modelElement href="BlockBreaker-core.uml#_5P6u0HKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dzaJXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dzaJnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5dzaJ3KPEe6hM-MRWptNsQ" name="paddle">
+        <modelElement href="BlockBreaker-core.uml#_5P7V4HKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzaKHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzaKXKPEe6hM-MRWptNsQ" name="Paddle">
+          <modelElement href="BlockBreaker-core.uml#_5LwnkHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5dzaKnKPEe6hM-MRWptNsQ" name="collidesWith">
+      <modelElement href="BlockBreaker-core.uml#_5P788HKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dzaK3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dzaLHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5dzaLXKPEe6hM-MRWptNsQ">
+        <modelElement href="BlockBreaker-core.uml#_5P788nKPEe6hM-MRWptNsQ"/>
+        <type xmi:id="_5dzaLnKPEe6hM-MRWptNsQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5dzaL3KPEe6hM-MRWptNsQ" name="pp">
+        <modelElement href="BlockBreaker-core.uml#_5P788XKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzaMHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzaMXKPEe6hM-MRWptNsQ" name="Paddle">
+          <modelElement href="BlockBreaker-core.uml#_5LwnkHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5dzaMnKPEe6hM-MRWptNsQ" name="checkCollision">
+      <modelElement href="BlockBreaker-core.uml#_5P8kAHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dzaM3KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dzaNHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5dzaNXKPEe6hM-MRWptNsQ" name="block">
+        <modelElement href="BlockBreaker-core.uml#_5P8kAXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzaNnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzaN3KPEe6hM-MRWptNsQ" name="Block">
+          <modelElement href="BlockBreaker-core.uml#_5KDXYHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5dzaOHKPEe6hM-MRWptNsQ" name="collidesWith">
+      <modelElement href="BlockBreaker-core.uml#_5P9LEHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dzaOXKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5dzaOnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5dzaO3KPEe6hM-MRWptNsQ">
+        <modelElement href="BlockBreaker-core.uml#_5P9yIHKPEe6hM-MRWptNsQ"/>
+        <type xmi:id="_5dzaPHKPEe6hM-MRWptNsQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5dzaPXKPEe6hM-MRWptNsQ" name="bb">
+        <modelElement href="BlockBreaker-core.uml#_5P9LEXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzaPnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzaP3KPEe6hM-MRWptNsQ" name="Block">
+          <modelElement href="BlockBreaker-core.uml#_5KDXYHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5dzaQHKPEe6hM-MRWptNsQ" name="draw">
+      <modelElement href="BlockBreaker-core.uml#_5QmrUHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5dzaQXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5dzaQnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5dzaQ3KPEe6hM-MRWptNsQ" name="shape">
+        <modelElement href="BlockBreaker-core.uml#_5QmrUXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5dzaRHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5dzaRXKPEe6hM-MRWptNsQ" name="ShapeRenderer">
+          <modelElement href="BlockBreaker-core.uml#_5OucAHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5eQs0HKPEe6hM-MRWptNsQ" name="MainMenuScreen" associationsOut="_5eEfkHKPEe6hM-MRWptNsQ _5eG70XKPEe6hM-MRWptNsQ _5eG70nKPEe6hM-MRWptNsQ _5eG703KPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5LeTsHKPEe6hM-MRWptNsQ"/>
+    <visualProperties xmi:id="_5eQs0XKPEe6hM-MRWptNsQ" position="-496.0,500.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_5eQs0nKPEe6hM-MRWptNsQ" label="+"/>
+    <attributes xmi:id="_5eQs03KPEe6hM-MRWptNsQ" name="game">
+      <modelElement href="BlockBreaker-core.uml#_5RNIQHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mccB4HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcco8HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mdBQsHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5eQs1XKPEe6hM-MRWptNsQ" label="~"/>
+      <cardinality xmi:id="_5eQs1nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5eQs13KPEe6hM-MRWptNsQ" name="BlockBreakerMenu">
+        <modelElement href="BlockBreaker-core.uml#_5KgDUHKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5eQs2HKPEe6hM-MRWptNsQ" name="batch">
+      <modelElement href="BlockBreaker-core.uml#_5RNvUXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mcd3EHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mceeIHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mdCe0HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5eQs2nKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5eQs23KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5eQs3HKPEe6hM-MRWptNsQ" name="SpriteBatch">
+        <modelElement href="BlockBreaker-core.uml#_5PB-AXKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5eQs3XKPEe6hM-MRWptNsQ" name="font">
+      <modelElement href="BlockBreaker-core.uml#_5ROWYXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mcfsQHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcgTUHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mdDs8HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5eQs33KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5eQs4HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5eQs4XKPEe6hM-MRWptNsQ" name="BitmapFont">
+        <modelElement href="BlockBreaker-core.uml#_5PAI0XKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5eQs4nKPEe6hM-MRWptNsQ" name="camera">
+      <modelElement href="BlockBreaker-core.uml#_5RO9cXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mchhcHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mciIgHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mdE7EHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5eQs5HKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5eQs5XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5eQs5nKPEe6hM-MRWptNsQ" name="OrthographicCamera">
+        <modelElement href="BlockBreaker-core.uml#_5O-6sXKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5eQs53KPEe6hM-MRWptNsQ" name="render">
+      <modelElement href="BlockBreaker-core.uml#_5LhXAHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5eQs6HKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LilIHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5eQs6XKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LjMMHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5eQs6nKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5eQs63KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5eQs7HKPEe6hM-MRWptNsQ" name="delta">
+        <modelElement href="BlockBreaker-core.uml#_5Lh-EHKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5eQs7XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5eQs7nKPEe6hM-MRWptNsQ" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5eQs73KPEe6hM-MRWptNsQ" name="show">
+      <modelElement href="BlockBreaker-core.uml#_5LjMMnKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5eQs8HKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LkaUHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5eQs8XKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LkaUXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5eQs8nKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5eQs83KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5eQs9HKPEe6hM-MRWptNsQ" name="resize">
+      <modelElement href="BlockBreaker-core.uml#_5LlBYXKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5eQs9XKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LmPgHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5eQs9nKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5Lm2kHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5eQs93KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5eQs-HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5eQs-XKPEe6hM-MRWptNsQ" name="width">
+        <modelElement href="BlockBreaker-core.uml#_5LlocHKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5eQs-nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5eQs-3KPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5eQs_HKPEe6hM-MRWptNsQ" name="height">
+        <modelElement href="BlockBreaker-core.uml#_5LlocXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5eQs_XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5eQs_nKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5eQs_3KPEe6hM-MRWptNsQ" name="pause">
+      <modelElement href="BlockBreaker-core.uml#_5LndoHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5eQtAHKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LoEsHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5eQtAXKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LorwHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5eQtAnKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5eQtA3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5eQtBHKPEe6hM-MRWptNsQ" name="resume">
+      <modelElement href="BlockBreaker-core.uml#_5LorwnKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5eQtBXKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LpS0HKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5eQtBnKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5Lp54HKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5eQtB3KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5eQtCHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5eQtCXKPEe6hM-MRWptNsQ" name="hide">
+      <modelElement href="BlockBreaker-core.uml#_5Lp54nKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5eQtCnKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5Lqg8HKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5eQtC3KPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LrIAHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5eQtDHKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5eQtDXKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5eQtDnKPEe6hM-MRWptNsQ" name="dispose">
+      <modelElement href="BlockBreaker-core.uml#_5LrIAnKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5eQtD3KPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LrvEHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5eQtEHKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LsWIHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5eQtEXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5eQtEnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5eQtE3KPEe6hM-MRWptNsQ" name="MainMenuScreen">
+      <modelElement href="BlockBreaker-core.uml#_5Pxk4HKPEe6hM-MRWptNsQ"/>
+      <keywords xmi:id="_5eQtFHKPEe6hM-MRWptNsQ" keyword="create"/>
+      <visibility xmi:id="_5eQtFXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5eQtFnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5eQtF3KPEe6hM-MRWptNsQ">
+        <modelElement href="BlockBreaker-core.uml#_5PyzAHKPEe6hM-MRWptNsQ"/>
+        <type xmi:id="_5eQtGHKPEe6hM-MRWptNsQ" name="MainMenuScreen">
+          <modelElement href="BlockBreaker-core.uml#_5LeTsHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5eQtGXKPEe6hM-MRWptNsQ" name="game">
+        <modelElement href="BlockBreaker-core.uml#_5PyL8HKPEe6hM-MRWptNsQ"/>
+        <keywords xmi:id="_5eRT4HKPEe6hM-MRWptNsQ" keyword="final"/>
+        <cardinality xmi:id="_5eRT4XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5eRT4nKPEe6hM-MRWptNsQ" name="BlockBreakerMenu">
+          <modelElement href="BlockBreaker-core.uml#_5KgDUHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5b8_sXKPEe6hM-MRWptNsQ" name="Paddle" associationsIn="_5ahcUHKPEe6hM-MRWptNsQ _5cyGIHKPEe6hM-MRWptNsQ" associationsOut="_5b8YoHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5LwnkHKPEe6hM-MRWptNsQ"/>
+    <visualProperties xmi:id="_5b8_snKPEe6hM-MRWptNsQ" position="516.0,1.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_5b8_s3KPEe6hM-MRWptNsQ" label="+"/>
+    <attributes xmi:id="_5b8_tHKPEe6hM-MRWptNsQ" defaultValue="20" name="x">
+      <modelElement href="BlockBreaker-core.uml#_5RQLkHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5b8_tXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5b8_tnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5b8_t3KPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5b8_uHKPEe6hM-MRWptNsQ" defaultValue="20" name="y">
+      <modelElement href="BlockBreaker-core.uml#_5RQyoHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5b8_uXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5b8_unKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5b8_u3KPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5b8_vHKPEe6hM-MRWptNsQ" defaultValue="100" name="width">
+      <modelElement href="BlockBreaker-core.uml#_5RQyonKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5b8_vXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5b8_vnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5b8_v3KPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5b8_wHKPEe6hM-MRWptNsQ" defaultValue="10" name="height">
+      <modelElement href="BlockBreaker-core.uml#_5RRZsXKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5b8_wXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5b8_wnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5b8_w3KPEe6hM-MRWptNsQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5b8_xHKPEe6hM-MRWptNsQ" name="area">
+      <modelElement href="BlockBreaker-core.uml#_5RSAwHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5b8_xXKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5b8_xnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5b8_x3KPEe6hM-MRWptNsQ" name="Rectangle">
+        <modelElement href="BlockBreaker-core.uml#_5P12UHKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5b8_yHKPEe6hM-MRWptNsQ" name="Paddle">
+      <modelElement href="BlockBreaker-core.uml#_5LycwHKPEe6hM-MRWptNsQ"/>
+      <keywords xmi:id="_5b8_yXKPEe6hM-MRWptNsQ" keyword="create"/>
+      <visibility xmi:id="_5b8_ynKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5b8_y3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5b8_zHKPEe6hM-MRWptNsQ">
+        <modelElement href="BlockBreaker-core.uml#_5LzD0nKPEe6hM-MRWptNsQ"/>
+        <type xmi:id="_5b8_zXKPEe6hM-MRWptNsQ" name="Paddle">
+          <modelElement href="BlockBreaker-core.uml#_5LwnkHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5b8_znKPEe6hM-MRWptNsQ" name="x">
+        <modelElement href="BlockBreaker-core.uml#_5LycwXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5b8_z3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5b8_0HKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5b8_0XKPEe6hM-MRWptNsQ" name="y">
+        <modelElement href="BlockBreaker-core.uml#_5LycwnKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5b8_0nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5b8_03KPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5b8_1HKPEe6hM-MRWptNsQ" name="ancho">
+        <modelElement href="BlockBreaker-core.uml#_5Lycw3KPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5b8_1XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5b8_1nKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5b8_13KPEe6hM-MRWptNsQ" name="alto">
+        <modelElement href="BlockBreaker-core.uml#_5LycxHKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5b8_2HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5b8_2XKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5b8_2nKPEe6hM-MRWptNsQ" name="draw">
+      <modelElement href="BlockBreaker-core.uml#_5QjoAHKPEe6hM-MRWptNsQ"/>
+      <visibility xmi:id="_5b8_23KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5b8_3HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5b8_3XKPEe6hM-MRWptNsQ" name="shape">
+        <modelElement href="BlockBreaker-core.uml#_5QjoAXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5b8_3nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5b8_33KPEe6hM-MRWptNsQ" name="ShapeRenderer">
+          <modelElement href="BlockBreaker-core.uml#_5OucAHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5bqEwHKPEe6hM-MRWptNsQ" name="GameOverScreen" associationsOut="_5bfssHKPEe6hM-MRWptNsQ _5bgTwHKPEe6hM-MRWptNsQ _5bgTwXKPEe6hM-MRWptNsQ _5bpdsHKPEe6hM-MRWptNsQ">
+    <modelElement href="BlockBreaker-core.uml#_5K1agHKPEe6hM-MRWptNsQ"/>
+    <visualProperties xmi:id="_5bqEwXKPEe6hM-MRWptNsQ" position="-168.0,163.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_5bqEwnKPEe6hM-MRWptNsQ" label="+"/>
+    <attributes xmi:id="_5bqEw3KPEe6hM-MRWptNsQ" name="game">
+      <modelElement href="BlockBreaker-core.uml#_5RAT8HKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mb_9AHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcAkEHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcuVwHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5bqExXKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bqExnKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5bqEx3KPEe6hM-MRWptNsQ" name="BlockBreakerMenu">
+        <modelElement href="BlockBreaker-core.uml#_5KgDUHKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5bqEyHKPEe6hM-MRWptNsQ" name="batch">
+      <modelElement href="BlockBreaker-core.uml#_5RBiEHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mb4BMHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mb5PUHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcvj4HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5bqEynKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bqEy3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5bqEzHKPEe6hM-MRWptNsQ" name="SpriteBatch">
+        <modelElement href="BlockBreaker-core.uml#_5PB-AXKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5bqEzXKPEe6hM-MRWptNsQ" name="font">
+      <modelElement href="BlockBreaker-core.uml#_5RCJIHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mb6dcHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mb7rkHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcwyAHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5bqEz3KPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bqE0HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5bqE0XKPEe6hM-MRWptNsQ" name="BitmapFont">
+        <modelElement href="BlockBreaker-core.uml#_5PAI0XKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5bqE0nKPEe6hM-MRWptNsQ" name="camera">
+      <modelElement href="BlockBreaker-core.uml#_5RCJInKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_mb85sHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mb-H0HK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcxZEHK0Ee6hM-MRWptNsQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_5bqE1HKPEe6hM-MRWptNsQ" label="-"/>
+      <cardinality xmi:id="_5bqE1XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <type xmi:id="_5bqE1nKPEe6hM-MRWptNsQ" name="OrthographicCamera">
+        <modelElement href="BlockBreaker-core.uml#_5O-6sXKPEe6hM-MRWptNsQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5bqr0HKPEe6hM-MRWptNsQ" name="render">
+      <modelElement href="BlockBreaker-core.uml#_5K32wHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5bqr0XKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5K5E4HKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5bqr0nKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5K5r8HKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bqr03KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bqr1HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5bqr1XKPEe6hM-MRWptNsQ" name="delta">
+        <modelElement href="BlockBreaker-core.uml#_5K32wXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bqr1nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bqr13KPEe6hM-MRWptNsQ" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5bqr2HKPEe6hM-MRWptNsQ" name="show">
+      <modelElement href="BlockBreaker-core.uml#_5K5r8nKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5bqr2XKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5K66EHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5bqr2nKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5K7hIHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bqr23KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bqr3HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5bqr3XKPEe6hM-MRWptNsQ" name="resize">
+      <modelElement href="BlockBreaker-core.uml#_5K8IMHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5bqr3nKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5K9WUHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5bqr33KPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5K99YHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bqr4HKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bqr4XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_5bqr4nKPEe6hM-MRWptNsQ" name="width">
+        <modelElement href="BlockBreaker-core.uml#_5K8IMXKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bqr43KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bqr5HKPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5bqr5XKPEe6hM-MRWptNsQ" name="height">
+        <modelElement href="BlockBreaker-core.uml#_5K8vQHKPEe6hM-MRWptNsQ"/>
+        <cardinality xmi:id="_5bqr5nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bqr53KPEe6hM-MRWptNsQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5bqr6HKPEe6hM-MRWptNsQ" name="pause">
+      <modelElement href="BlockBreaker-core.uml#_5K99YnKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5bqr6XKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5K-kcHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5bqr6nKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5K_LgHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bqr63KPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bqr7HKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5bqr7XKPEe6hM-MRWptNsQ" name="resume">
+      <modelElement href="BlockBreaker-core.uml#_5K_LgnKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5bqr7nKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5K_ykHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5bqr73KPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LAZoHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bqr8HKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bqr8XKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5bqr8nKPEe6hM-MRWptNsQ" name="hide">
+      <modelElement href="BlockBreaker-core.uml#_5LBAsHKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5bqr83KPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LBnwHKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5bqr9HKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LBnwXKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bqr9XKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bqr9nKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5bqr93KPEe6hM-MRWptNsQ" name="dispose">
+      <modelElement href="BlockBreaker-core.uml#_5LCO0HKPEe6hM-MRWptNsQ"/>
+      <stereotypes xmi:id="_5bqr-HKPEe6hM-MRWptNsQ" name="LegacyStyledElement">
+        <modelElement href="BlockBreaker-core.uml#_5LC14HKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5bqr-XKPEe6hM-MRWptNsQ" name="Annotations">
+        <modelElement href="BlockBreaker-core.uml#_5LC14XKPEe6hM-MRWptNsQ"/>
+      </stereotypes>
+      <visibility xmi:id="_5bqr-nKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bqr-3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_5bqr_HKPEe6hM-MRWptNsQ" name="GameOverScreen">
+      <modelElement href="BlockBreaker-core.uml#_5Pep8HKPEe6hM-MRWptNsQ"/>
+      <keywords xmi:id="_5bqr_XKPEe6hM-MRWptNsQ" keyword="create"/>
+      <visibility xmi:id="_5bqr_nKPEe6hM-MRWptNsQ" label="+"/>
+      <cardinality xmi:id="_5bqr_3KPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_5bqsAHKPEe6hM-MRWptNsQ">
+        <modelElement href="BlockBreaker-core.uml#_5PfRA3KPEe6hM-MRWptNsQ"/>
+        <type xmi:id="_5bqsAXKPEe6hM-MRWptNsQ" name="GameOverScreen">
+          <modelElement href="BlockBreaker-core.uml#_5K1agHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5bqsAnKPEe6hM-MRWptNsQ" name="game">
+        <modelElement href="BlockBreaker-core.uml#_5PfRAHKPEe6hM-MRWptNsQ"/>
+        <keywords xmi:id="_5bqsA3KPEe6hM-MRWptNsQ" keyword="final"/>
+        <cardinality xmi:id="_5bqsBHKPEe6hM-MRWptNsQ" label="1" max="1" min="1"/>
+        <type xmi:id="_5bqsBXKPEe6hM-MRWptNsQ" name="BlockBreakerMenu">
+          <modelElement href="BlockBreaker-core.uml#_5KgDUHKPEe6hM-MRWptNsQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
