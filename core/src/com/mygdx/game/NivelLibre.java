@@ -1,6 +1,7 @@
 package com.mygdx.game;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
@@ -17,6 +18,13 @@ public class NivelLibre implements Nivel{
 	private int puntaje;
 	private int nivel;
 	
+	int juegoAncho = Gdx.graphics.getWidth(); // Ancho del juego
+	int juegoAlto = Gdx.graphics.getHeight(); // Alto del juego
+	// Genera coordenadas x e y aleatorias dentro de los límites del juego
+	Random random = new Random();
+	int xAleatorio = random.nextInt(juegoAncho - 40); // Ajusta el valor máximo para que no se salga de los bordes
+	int yAleatorio = random.nextInt(juegoAlto + 2500);
+
 	public NivelLibre() {
 		nivel = 1;
 		crearBloques(2+nivel);
@@ -25,7 +33,7 @@ public class NivelLibre implements Nivel{
 	    shape.setAutoShapeType(true);
 		
 		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 10, 5, 7, true);
-		ballMejora = new PingBallMejora(Gdx.graphics.getWidth()/2-10, 350, 10, 5, 7, true);
+		ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 7, 7, 10, true);
 		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,100,10);
 
 		vidas = 3;
@@ -53,11 +61,13 @@ public class NivelLibre implements Nivel{
 	
 	public void comprobarPelota() {
 		if (ball.getY()<0) {
+			int xAleatorio = random.nextInt(juegoAncho - 40); // Ajusta el valor máximo para que no se salga de los bordes
+			int yAleatorio = random.nextInt(juegoAlto + 2500);
 			vidas--;
+			ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 7, 7, 10, true);
 			ball = new PingBallNormal(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11, 10, 5, 7, true);
 		}
 	}
-	
 
 	public void actualizarLugar() {
 		if (ball.estaQuieto()) {
@@ -70,8 +80,12 @@ public class NivelLibre implements Nivel{
 	}
 	
 	public void colisionesPelotas() {
+	    boolean colisionBallMejora = ballMejora.checkCollision(pad);
 		ball.checkCollision(pad);
 		ballMejora.checkCollision(pad);
+		if(colisionBallMejora == true) {
+			mejoras();
+		}
 	}
 	
 	public void dibujarPelotas() {
@@ -81,13 +95,16 @@ public class NivelLibre implements Nivel{
 		shape.end();
 	}
 	
-
-	public void nivelCompleto() {
+	public boolean nivelCompleto(){
 		if (blocks.isEmpty()) {
 			nivel++;
 			crearBloques(2+nivel);
 			ball = new PingBallNormal(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11, 10, 5, 7, true);
 		}
+		if(vidas<0) {
+			return true;
+		}
+		return false;
 	}
 	
 
@@ -127,5 +144,8 @@ public class NivelLibre implements Nivel{
     public int getVidas() {
         return vidas;
     }
-
+    
+    public void mejoras() {        
+        ball.setSize(ball.getSize() + 5); 
+    }
 }

@@ -1,6 +1,7 @@
 package com.mygdx.game;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
@@ -15,20 +16,25 @@ public class NivelMedio implements Nivel{
 	private ArrayList<Block> blocks = new ArrayList<>();
 	private int vidas;
 	private int puntaje;
-	private int nivel;
+	
+	int juegoAncho = Gdx.graphics.getWidth(); // Ancho del juego
+	int juegoAlto = Gdx.graphics.getHeight(); // Alto del juego
+	// Genera coordenadas x e y aleatorias dentro de los límites del juego
+	Random random = new Random();
+	int xAleatorio = random.nextInt(juegoAncho - 70); // Ajusta el valor máximo para que no se salga de los bordes
+	int yAleatorio = random.nextInt(juegoAlto + 1500);
 	
 	public NivelMedio() {
-		nivel = 1;
-		crearBloques(2+nivel);
+		crearBloques(4);
 
 		shape = new ShapeRenderer();
 	    shape.setAutoShapeType(true);
 		
-		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 10, 5, 7, true);
-		ballMejora = new PingBallMejora(Gdx.graphics.getWidth()/2-10, 350, 10, 5, 7, true);
-		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,100,10);
+		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 7, 12, 12, true);
+		ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 10, 7, 7, true);
+		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,80,10);
 
-		vidas = 3;
+		vidas = 2;
 		puntaje = 0;
 	}
 	public void crearBloques(int filas) {
@@ -53,8 +59,11 @@ public class NivelMedio implements Nivel{
 	
 	public void comprobarPelota() {
 		if (ball.getY()<0) {
+			int xAleatorio = random.nextInt(juegoAncho - 70); // Ajusta el valor máximo para que no se salga de los bordes
+			int yAleatorio = random.nextInt(juegoAlto + 1500);
 			vidas--;
-			ball = new PingBallNormal(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11, 10, 5, 7, true);
+			ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 7, 12, 12, true);
+			ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 10, 7, 7, true);
 		}
 	}
 	
@@ -70,8 +79,12 @@ public class NivelMedio implements Nivel{
 	}
 	
 	public void colisionesPelotas() {
+	    boolean colisionBallMejora = ballMejora.checkCollision(pad);
 		ball.checkCollision(pad);
 		ballMejora.checkCollision(pad);
+		if(colisionBallMejora == true) {
+			mejoras();
+		}
 	}
 	
 	public void dibujarPelotas() {
@@ -82,15 +95,13 @@ public class NivelMedio implements Nivel{
 	}
 	
 
-	public void nivelCompleto() {
+	public boolean nivelCompleto() {
 		if (blocks.isEmpty()) {
-			nivel++;
-			crearBloques(2+nivel);
-			ball = new PingBallNormal(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11, 10, 5, 7, true);
+			return true;
 		}
+		return false;
 	}
 	
-
 	public void dibujarPaddle() {
 		shape.begin(ShapeRenderer.ShapeType.Filled);
 		pad.draw(shape);
@@ -102,7 +113,7 @@ public class NivelMedio implements Nivel{
 		for (int i = 0; i < blocks.size(); i++) {
 			Block b = blocks.get(i);
 			if (b.destroyed) {
-				puntaje++;
+				puntaje += 5;
 				blocks.remove(b);
 				i--; //para no saltarse 1 tras eliminar del arraylist
 			}
@@ -126,6 +137,14 @@ public class NivelMedio implements Nivel{
 
     public int getVidas() {
         return vidas;
+    }
+    
+    public void mejoras() {
+        vidas++;
+        ball.setSize(ball.getSize() + 5);
+        float factorReduccion = 0.8f;
+        ball.setxSpeed(ball.getxSpeed() * factorReduccion);
+        ball.setySpeed(ball.getySpeed() * factorReduccion);
     }
 }
 

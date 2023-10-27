@@ -5,11 +5,11 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
-import java.util.ArrayList;
 
 public class GameScreen implements Screen {
 	final BlockBreakerMenu game;
@@ -19,7 +19,6 @@ public class GameScreen implements Screen {
 	private ShapeRenderer shape;
 	private Nivel administrar;
 	private Texture backgroundTexture;
-
     
 	public GameScreen(BlockBreakerMenu game, int nivel) {
 		this.game = game;
@@ -35,11 +34,9 @@ public class GameScreen implements Screen {
 		shape = new ShapeRenderer();
 		backgroundTexture = new Texture(Gdx.files.internal("background2.png"));
 
-		
         
 		definirNivel(nivel);
 	}
-
 
 	public void dibujaTextos() {
 		//actualizar matrices de la cámara
@@ -57,12 +54,11 @@ public class GameScreen implements Screen {
 	public void render (float delta) {
 		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		
+
 		batch.begin();
 		batch.draw(backgroundTexture, 0, 0, Gdx.graphics.getWidth()+160, Gdx.graphics.getHeight());
 		batch.end();
 		
-
 		administrar.dibujarPaddle();
 		
 		//Ver inicio del movimiento y actualizarlo
@@ -71,22 +67,22 @@ public class GameScreen implements Screen {
 		//verificar si se fue la bola x abajo
 		administrar.comprobarPelota();
 		
+		administrar.colisionesPelotas();
+		administrar.dibujarPelotas();
+		
 		// verificar game over
 		if (administrar.perder() == true) {
 	    	game.setScreen(new GameOverScreen(game));
 	    	}
 		
-		//HACER LO DE LOS BLOQUES PARA DISTINTOS NIVELES
 		// verificar si el nivel se terminó
-		administrar.nivelCompleto();
-	
+		if (administrar.nivelCompleto() == true) {
+	    	game.setScreen(new GameWinScreen(game));
+	    	}
 		//dibujar bloques
 		administrar.dibujarBloques();
 		// actualizar estado de los bloques
 		administrar.actualizarBloques();
-		
-		administrar.colisionesPelotas();
-		administrar.dibujarPelotas();
 		
 		dibujaTextos();
 	}

@@ -4,6 +4,8 @@ package com.mygdx.game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.audio.Sound;
+
 
 public class PingBallNormal extends PingBall {
 	private Color color = Color.WHITE;
@@ -11,7 +13,6 @@ public class PingBallNormal extends PingBall {
 	public PingBallNormal(int x, int y, float size, float xSpeed, float ySpeed, boolean iniciaQuieto) {
 		super(x, y, size, xSpeed, ySpeed, iniciaQuieto);
 		sonidoColision = Gdx.audio.newSound(Gdx.files.internal("choqueBall.mp3")); // Inicializa sonidoColision
-
 	}
 
 	@Override
@@ -34,12 +35,14 @@ public class PingBallNormal extends PingBall {
 	}
 
 	@Override
-	public void checkCollision(Paddle paddle) {
+	public boolean checkCollision(Paddle paddle) {
 		if (collidesWith(paddle)) {
 			color = Color.GREEN;
 			ySpeed = -ySpeed;
+			return true;
 		} else {
 			color = Color.WHITE;
+			return false;
 		}
 	}
 

@@ -1,9 +1,8 @@
 package com.mygdx.game;
 
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Sound;
-
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
 public abstract class PingBall {
 	private float x;
@@ -23,10 +22,9 @@ public abstract class PingBall {
 		this.ySpeed = ySpeed;
 		estaQuieto = iniciaQuieto;
 		Sound sonidoColision = Gdx.audio.newSound(Gdx.files.internal("choqueBall.mp3"));
-
 	}
 
-	public abstract void checkCollision(Paddle paddle);
+	public abstract boolean checkCollision(Paddle paddle);
 	public abstract void checkCollision(Block block);
 	public abstract void draw(ShapeRenderer shapeRenderer);
 	public abstract void update();
@@ -64,5 +62,21 @@ public abstract class PingBall {
 	public float getSize() {
 		return size;
 	}
-
+	
+	public void setSize(float size) {
+	    this.size = size;
+	}
+	
+	public void setySpeed(float ySpeed) {
+		this.ySpeed = ySpeed;
+	}
+	public float getySpeed() {
+		return ySpeed;
+	}
+	public void setxSpeed(float xSpeed) {
+		this.xSpeed = xSpeed;
+	}
+	public float getxSpeed() {
+		return ySpeed;
+	}
 }

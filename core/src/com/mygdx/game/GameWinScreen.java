@@ -8,26 +8,26 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
 
-public class GameOverScreen implements Screen {
+public class GameWinScreen implements Screen {
 	private final BlockBreakerMenu game;
 	private SpriteBatch batch;	   
 	private BitmapFont font;
 	private OrthographicCamera camera;
 	private Texture backgroundTexture;
 
-	public GameOverScreen(final BlockBreakerMenu game) {
+	public GameWinScreen(final BlockBreakerMenu game) {
 		this.game = game;
         this.batch = game.getBatch();
         this.font = game.getFont();
 
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false, 800, 480);
-		backgroundTexture = new Texture(Gdx.files.internal("GameOver.png"));
+		backgroundTexture = new Texture(Gdx.files.internal("Victoria.png"));
 	}
 
 	@Override
 	public void render(float delta) {
-		ScreenUtils.clear(0, 0, 0.2f, 1);
+		ScreenUtils.clear(0, 0, 0, 1);
 
 		camera.update();
 		batch.setProjectionMatrix(camera.combined);
