@@ -6,20 +6,10 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
 public class PingBallMejora extends PingBall{
 	private Color color = Color.RED;
-	private boolean destroyed = false;
+    private boolean destroyed = false;
 	
-	public PingBallMejora(int x, int y, float size, float xSpeed, float ySpeed, boolean iniciaQuieto, boolean destroyed) {
+	public PingBallMejora(int x, int y, float size, float xSpeed, float ySpeed, boolean iniciaQuieto) {
 		super(x, y, size, xSpeed, ySpeed, iniciaQuieto);
-		this.setDestroyed(destroyed);
-
-	}
-	public boolean isDestroyed() {
-		return destroyed;
-	}
-
-	public boolean setDestroyed(boolean destroyed) {
-		this.destroyed = destroyed;
-		return destroyed;
 	}
 
 	public void draw(ShapeRenderer shape) {
@@ -35,7 +25,7 @@ public class PingBallMejora extends PingBall{
 	public void checkCollision(Paddle paddle) {
 		if (collidesWith(paddle)) {
 			color = Color.GREEN;
-			setDestroyed(true);
+	        destroyed = true;
 		} else {
 			color = Color.RED;
 
@@ -54,7 +44,7 @@ public class PingBallMejora extends PingBall{
 	public void destroy() {
 		if(destroyed = true) {
 			setX(-1000);
-			setY(-1000);
+	        setY(-1000);
 		}
 	}
 	

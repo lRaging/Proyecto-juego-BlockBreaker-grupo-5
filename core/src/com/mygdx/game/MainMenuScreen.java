@@ -14,6 +14,7 @@ public class MainMenuScreen implements Screen {
 	private SpriteBatch batch;
 	private BitmapFont font;
 	private OrthographicCamera camera;
+	private int nivel;
 
 	// CONSTRUCTOR
 	public MainMenuScreen(final BlockBreakerMenu game) {
@@ -42,10 +43,28 @@ public class MainMenuScreen implements Screen {
 		batch.end();
 
 		// COMIENZA EL JUEGO
-		if (Gdx.input.justTouched()) {
-			game.setScreen(new GameScreen(game));
-			dispose();
-		}
+	    if (Gdx.input.justTouched()) {
+	        float touchX = Gdx.input.getX();
+	        float touchY = Gdx.input.getY();
+
+	        if (touchX > 200 && touchX < 315) {
+	            if (touchY > camera.viewportHeight / 2 + 50) {
+	            	nivel = 1; // Nivel Fácil
+	            } else if (touchY > camera.viewportHeight / 2) {
+	            	nivel = 2; // Nivel Medio
+	            } else if (touchY > camera.viewportHeight / 2 - 50) {
+	            	nivel = 3; // Nivel Difícil
+	            } else if (touchY > camera.viewportHeight / 2 - 100) {
+	            	nivel = 4; // Nivel Libre
+	            }
+
+	            if (nivel != 0) {
+	                // El jugador ha seleccionado un nivel, ahora puedes iniciar el juego.
+	                game.setScreen(new GameScreen(game, nivel));
+	                dispose();
+	            }
+	        }
+	    }
 	}
 
 	@Override

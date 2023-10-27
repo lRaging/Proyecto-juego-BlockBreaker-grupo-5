@@ -17,12 +17,9 @@ public class GameScreen implements Screen {
 	private SpriteBatch batch;
 	private BitmapFont font;
 	private ShapeRenderer shape;
-	private ArrayList<Block> blocks = new ArrayList<>();
-	private int vidas;
-	private int puntaje;
-	private Administrar administrar;
+	private Nivel administrar;
     
-	public GameScreen(BlockBreakerMenu game) {
+	public GameScreen(BlockBreakerMenu game, int nivel) {
 		this.game = game;
 		this.batch = game.getBatch();
 		this.font = game.getFont();
@@ -35,7 +32,7 @@ public class GameScreen implements Screen {
 		font.getData().setScale(3, 2);
 		shape = new ShapeRenderer();
         
-		administrar = new Administrar();
+		definirNivel(nivel);
 	}
 
 
@@ -57,10 +54,13 @@ public class GameScreen implements Screen {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
 		administrar.dibujarPaddle();
+		
 		//Ver inicio del movimiento y actualizarlo
 		administrar.actualizarLugar();
+		
 		//verificar si se fue la bola x abajo
 		administrar.comprobarPelota();
+		
 		// verificar game over
 		if (administrar.perder() == true) {
 	    	game.setScreen(new GameOverScreen(game));
@@ -81,6 +81,18 @@ public class GameScreen implements Screen {
 		dibujaTextos();
 	}
 
+	public void definirNivel(int nivel) {
+	    if (nivel == 1) {
+	        administrar = new NivelFacil();
+	    } else if (nivel == 2) {
+	        administrar = new NivelMedio();
+    	} else if (nivel == 3) {
+    		administrar = new NivelDificil();
+    	}else {
+    		administrar = new NivelLibre();
+    	}
+  
+	}
 	
 	@Override
 	public void show() {

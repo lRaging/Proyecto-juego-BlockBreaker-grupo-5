@@ -20,7 +20,7 @@ public class PingBallNormal extends PingBall {
 
 	@Override
 	public void update() {
-		if (isEstaQuieto()) return;
+		if (estaQuieto()) return;
 		setX(getX() + xSpeed);
 		setY(getY() + ySpeed);
 		if (getX() - getSize() < 0 ||getX() + getSize() > Gdx.graphics.getWidth()) {
