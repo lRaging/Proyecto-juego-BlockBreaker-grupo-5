@@ -18,6 +18,8 @@ public class GameScreen implements Screen {
 	private BitmapFont font;
 	private ShapeRenderer shape;
 	private Nivel administrar;
+	private Texture backgroundTexture;
+
     
 	public GameScreen(BlockBreakerMenu game, int nivel) {
 		this.game = game;
@@ -31,6 +33,9 @@ public class GameScreen implements Screen {
 		font = new BitmapFont();
 		font.getData().setScale(3, 2);
 		shape = new ShapeRenderer();
+		backgroundTexture = new Texture(Gdx.files.internal("background2.png"));
+
+		
         
 		definirNivel(nivel);
 	}
@@ -52,6 +57,11 @@ public class GameScreen implements Screen {
 	public void render (float delta) {
 		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+		
+		batch.begin();
+		batch.draw(backgroundTexture, 0, 0, Gdx.graphics.getWidth()+160, Gdx.graphics.getHeight());
+		batch.end();
+		
 
 		administrar.dibujarPaddle();
 		
