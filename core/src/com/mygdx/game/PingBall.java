@@ -1,6 +1,8 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Sound;
 
 
 public abstract class PingBall {
@@ -10,6 +12,8 @@ public abstract class PingBall {
 	float ySpeed;
 	private float size;
 	private boolean estaQuieto;
+	protected Sound sonidoColision; 
+
 
 	public PingBall(int x, int y, float size, float xSpeed, float ySpeed, boolean iniciaQuieto) {
 		this.x = x;
@@ -18,6 +22,8 @@ public abstract class PingBall {
 		this.xSpeed = xSpeed;
 		this.ySpeed = ySpeed;
 		estaQuieto = iniciaQuieto;
+		Sound sonidoColision = Gdx.audio.newSound(Gdx.files.internal("choqueBall.mp3"));
+
 	}
 
 	public abstract void checkCollision(Paddle paddle);
