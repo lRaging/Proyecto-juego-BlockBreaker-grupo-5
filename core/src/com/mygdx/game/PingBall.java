@@ -21,7 +21,6 @@ public abstract class PingBall {
 		this.xSpeed = xSpeed;
 		this.ySpeed = ySpeed;
 		estaQuieto = iniciaQuieto;
-		Sound sonidoColision = Gdx.audio.newSound(Gdx.files.internal("choqueBall.mp3"));
 	}
 
 	public abstract boolean checkCollision(Paddle paddle);
