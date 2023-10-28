@@ -86,6 +86,13 @@ public class NivelFacil implements Nivel{
 		ballMejora.checkCollision(pad);
 		if(colisionBallMejora == true) {
 			mejoras();
+		}else {
+			if ((ballMejora.getY() < 0)) {
+				if (puntaje > 0) {
+					puntaje--;
+				}
+			}
+			
 		}
 	}
 	
