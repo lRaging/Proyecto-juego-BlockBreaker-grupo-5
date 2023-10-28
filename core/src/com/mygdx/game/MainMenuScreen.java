@@ -22,10 +22,12 @@ public class MainMenuScreen implements Screen {
 	// CONSTRUCTOR
 	public MainMenuScreen(final BlockBreakerMenu game) {
 		this.game = game;
-        this.batch = game.getBatch();
-        this.font = game.getFont();
+		this.batch = game.getBatch();
+		this.font = game.getFont();
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false, 800, 480);
+		shape = new ShapeRenderer();
+		
 	}
 
 	@Override
@@ -45,14 +47,27 @@ public class MainMenuScreen implements Screen {
 		font.draw(batch, "Nivel Dificil", 200, camera.viewportHeight/2-50);
 		font.draw(batch, "Nivel Libre", 200, camera.viewportHeight/2-100);
 		batch.end();
+
+		 // Dibujar rectángulos alrededor de cada nivel
+		shape.begin(ShapeRenderer.ShapeType.Line);
+		shape.setColor(Color.SALMON);
+		// Rectángulo alrededor de "Nivel Facil"
+		shape.rect(140, camera.viewportHeight/2+20, 200, 40);
+		// Rectángulo alrededor de "Nivel Medio"
+		shape.rect(140, camera.viewportHeight/2-28, 200, 40);
+		// Rectángulo alrededor de "Nivel Dificil"
+		shape.rect(140, camera.viewportHeight/2-80, 200, 40);
+		// Rectángulo alrededor de "Nivel Libre"
+		shape.rect(140, camera.viewportHeight/2-130, 200, 40);
+		shape.end();
 		
 		// COMIENZA EL JUEGO
 		if (Gdx.input.justTouched()) {
 		    float touchX = Gdx.input.getX();
 		    float touchY = Gdx.graphics.getHeight() - Gdx.input.getY(); // Invierte la coordenada Y
 
-		    if (touchX > 200 && touchX < 400) {
-		        if (touchY > camera.viewportHeight / 2 + 5 && touchY < camera.viewportHeight / 2 + 35) {
+		    if (touchX > 100 && touchX < 400) {
+		        if (touchY > camera.viewportHeight / 2 - 5 && touchY < camera.viewportHeight) {
 		            nivel = 1; // Nivel Fácil
 		        } else if (touchY > camera.viewportHeight / 2 - 35 && touchY < camera.viewportHeight / 2 - 5) {
 		            nivel = 2; // Nivel Medio
