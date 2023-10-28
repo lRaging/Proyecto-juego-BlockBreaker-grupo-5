@@ -27,9 +27,8 @@ public class PingBallMejora extends PingBall{
 	@Override
 	public boolean checkCollision(Paddle paddle) {
 		if (collidesWith(paddle)) {
-			sonidoColision.play();
-		    setY(-1000);
-		    return true;
+			ySpeed = -ySpeed;
+			return true;
 		    
 		}
 		return false;
