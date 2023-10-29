@@ -9,12 +9,14 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
 
 public class GameOverScreen implements Screen {
+	// Variables de instancia para la pantalla de juego
 	private final BlockBreakerMenu game;
 	private SpriteBatch batch;	   
 	private BitmapFont font;
 	private OrthographicCamera camera;
 	private Texture backgroundTexture;
 
+	// Inicialización de la cámara, el batch, el font, el shape y la textura de fondo del juego
 	public GameOverScreen(final BlockBreakerMenu game) {
 		this.game = game;
         this.batch = game.getBatch();
@@ -25,6 +27,7 @@ public class GameOverScreen implements Screen {
 		backgroundTexture = new Texture(Gdx.files.internal("GameOver.png"));
 	}
 
+	 // Método para renderizar la pantalla de juego
 	@Override
 	public void render(float delta) {
 		ScreenUtils.clear(0, 0, 0.2f, 1);
@@ -37,13 +40,14 @@ public class GameOverScreen implements Screen {
 		batch.draw(backgroundTexture, 0, 0, Gdx.graphics.getWidth()+160, Gdx.graphics.getHeight());
 		batch.end();
 
-
+		//si se realiza un click, se inicializa el juego desde el menuPrincipal
 		if (Gdx.input.isTouched()) {
 			game.setScreen(new MainMenuScreen(game));
 			dispose();
 		}
 	}
 
+	// Métodos de la interfaz Screen que no se implementan en esta clase
 	@Override
 	public void show() {
 		// TODO Auto-generated method stub
