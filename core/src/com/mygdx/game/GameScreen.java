@@ -21,6 +21,7 @@ public class GameScreen implements Screen {
 	private Texture backgroundTexture;
     
 	public GameScreen(BlockBreakerMenu game, int nivel) {
+		 // Inicialización de las variables de instancia en el constructor
 		this.game = game;
 		this.batch = game.getBatch();
 		this.font = game.getFont();
@@ -33,11 +34,11 @@ public class GameScreen implements Screen {
 		font.getData().setScale(3, 2);
 		shape = new ShapeRenderer();
 		backgroundTexture = new Texture(Gdx.files.internal("background2.png"));
-
-        
+		// Definir el nivel según el parámetro de entrada
 		definirNivel(nivel);
 	}
-
+	
+	 // Método para dibujar los textos del juego, como puntaje y vidas
 	public void dibujaTextos() {
 		//actualizar matrices de la cámara
 		camera.update();
@@ -51,6 +52,7 @@ public class GameScreen implements Screen {
 	}
 
 	@Override
+	// Método para renderizar la pantalla de juego
 	public void render (float delta) {
 		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
@@ -86,7 +88,7 @@ public class GameScreen implements Screen {
 		
 		dibujaTextos();
 	}
-
+	//método para definir el nivel ingresado por el jugador y crear un nuevo tipo de nivel
 	public void definirNivel(int nivel) {
 	    if (nivel == 1) {
 	        administrar = new NivelFacil();
@@ -99,7 +101,8 @@ public class GameScreen implements Screen {
     	}
   
 	}
-	
+
+	 // Métodos de la interfaz Screen que no se implementan en esta clase
 	@Override
 	public void show() {
 
