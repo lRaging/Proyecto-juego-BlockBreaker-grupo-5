@@ -1,5 +1,7 @@
 package com.mygdx.game;
 
+
+//interfaz del nivel para especificar métodos para implementar en los distintos tipos de niveles
 public interface Nivel {
 
 	public void crearBloques(int filas);
