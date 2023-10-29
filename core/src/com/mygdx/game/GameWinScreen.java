@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
 
 public class GameWinScreen implements Screen {
+	// Inicialización de las variables de instancia en el constructor
 	private final BlockBreakerMenu game;
 	private SpriteBatch batch;	   
 	private BitmapFont font;
@@ -22,10 +23,12 @@ public class GameWinScreen implements Screen {
 
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false, 800, 480);
+		 // Carga la textura de fondo de la pantalla de victoria desde un archivo interno
 		backgroundTexture = new Texture(Gdx.files.internal("Victoria.png"));
 	}
 
 	@Override
+	// Método para renderizar la pantalla de victoria del juego
 	public void render(float delta) {
 		ScreenUtils.clear(0, 0, 0, 1);
 
@@ -37,7 +40,7 @@ public class GameWinScreen implements Screen {
 		batch.draw(backgroundTexture, 0, 0, Gdx.graphics.getWidth()+160, Gdx.graphics.getHeight());
 		batch.end();
 
-
+		//si se hace click a la pantalla de victoria, se comienza con un nuevo juego mostrando el menu principal 
 		if (Gdx.input.isTouched()) {
 			game.setScreen(new MainMenuScreen(game));
 			dispose();
@@ -45,6 +48,7 @@ public class GameWinScreen implements Screen {
 	}
 
 	@Override
+	 // Métodos de la interfaz Screen que no se implementan en esta clase
 	public void show() {
 		// TODO Auto-generated method stub
 	}
