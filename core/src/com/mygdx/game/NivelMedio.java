@@ -25,6 +25,8 @@ public class NivelMedio implements Nivel{
 	int yAleatorio = random.nextInt(juegoAlto + 1500);
 	
 	public NivelMedio() {
+		 // Método constructor para inicializar el nivel medio
+
 		crearBloques(4);
 
 		shape = new ShapeRenderer();
@@ -37,6 +39,8 @@ public class NivelMedio implements Nivel{
 		vidas = 2;
 		puntaje = 0;
 	}
+
+	//crear bloques por fila e inicializar el tamaño de cada una de ella en la parte superior de la pantalla
 	public void crearBloques(int filas) {
 		int blockWidth = 70;
 		int blockHeight = 26;
@@ -48,7 +52,9 @@ public class NivelMedio implements Nivel{
 			}
 		}
 	}
-	
+
+	// Método para comprobar si el jugador ha perdido todas sus vidas
+
 	public boolean perder() {
 		if (vidas<=0) {
 			return true;
@@ -56,7 +62,8 @@ public class NivelMedio implements Nivel{
 		else 
 			return false;
 	}
-	
+
+	// Método para comprobar la posición de la pelota y actualizar el número de vidas si la pelota se sale de la pantalla
 	public void comprobarPelota() {
 		if (ball.getY()<0) {
 			int xAleatorio = random.nextInt(juegoAncho - 70); // Ajusta el valor máximo para que no se salga de los bordes
@@ -66,8 +73,8 @@ public class NivelMedio implements Nivel{
 			ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 10, 7, 7, true);
 		}
 	}
-	
 
+	// Método para actualizar la posición de la pelota y la acción de empezar a moverse al presionar la tecla de espacio
 	public void actualizarLugar() {
 		if (ball.estaQuieto()) {
 			ball.setXY(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11);
@@ -77,7 +84,8 @@ public class NivelMedio implements Nivel{
 			ballMejora.update();
 		}
 	}
-	
+
+	// Método para comprobar colisiones entre las pelotas y el paddle, y realizar acciones según la colisión
 	public void colisionesPelotas() {
 	    boolean colisionBallMejora = ballMejora.checkCollision(pad);
 		ball.checkCollision(pad);
@@ -93,29 +101,31 @@ public class NivelMedio implements Nivel{
 			
 		}
 	}
-	
+
+	// Método para dibujar las pelotas en el juego
 	public void dibujarPelotas() {
 		shape.begin(ShapeRenderer.ShapeType.Filled);
 		ball.draw(shape);
 		ballMejora.draw(shape);
 		shape.end();
 	}
-	
 
+	// Método para verificar si el nivel actual está completo y preparar el siguiente nivel
 	public boolean nivelCompleto() {
 		if (blocks.isEmpty()) {
 			return true;
 		}
 		return false;
 	}
-	
+
+	// Método para dibujar el paddle en el juego
 	public void dibujarPaddle() {
 		shape.begin(ShapeRenderer.ShapeType.Filled);
 		pad.draw(shape);
 		shape.end();
 	}
-	
 
+	// Método para actualizar los bloques en el juego y el puntaje del jugador
 	public void actualizarBloques() {
 		for (int i = 0; i < blocks.size(); i++) {
 			Block b = blocks.get(i);
@@ -126,8 +136,9 @@ public class NivelMedio implements Nivel{
 			}
 		}
 	}
-	
 
+
+	// Método para dibujar los bloques en el juego
 	public void dibujarBloques() {
 		shape.begin(ShapeRenderer.ShapeType.Filled);
 		for (Block b : blocks) {
@@ -137,7 +148,7 @@ public class NivelMedio implements Nivel{
 		shape.end();
 	}
 	
-	
+	//getters pare el puntaje y vidas
     public int getPuntaje() {
         return puntaje;
     }
@@ -145,7 +156,9 @@ public class NivelMedio implements Nivel{
     public int getVidas() {
         return vidas;
     }
-    
+
+
+	//ventajas para el pingBallMejora, aumento de vidas, aumento del tamaño pingBallNormal y disminuir velocidad
     public void mejoras() {
         vidas++;
         ball.setSize(ball.getSize() + 5);
