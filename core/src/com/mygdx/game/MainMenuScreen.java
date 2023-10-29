@@ -12,6 +12,7 @@ import com.badlogic.gdx.utils.ScreenUtils;
 
 public class MainMenuScreen implements Screen {
 
+	// Variables de instancia para el menú principal del juego
 	final BlockBreakerMenu game;
 	private SpriteBatch batch;
 	private BitmapFont font;
@@ -21,6 +22,7 @@ public class MainMenuScreen implements Screen {
 
 	// CONSTRUCTOR
 	public MainMenuScreen(final BlockBreakerMenu game) {
+		// Inicialización de las variables de instancia en el constructor
 		this.game = game;
 		this.batch = game.getBatch();
 		this.font = game.getFont();
@@ -31,6 +33,7 @@ public class MainMenuScreen implements Screen {
 	}
 
 	@Override
+	 // Método para renderizar el menú principal del juego
 	public void render(float delta) {
 	       Gdx.gl.glClearColor(0f, 0f, 0f, 1f); // Color de fondo superior (negro)
 	        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
@@ -85,6 +88,7 @@ public class MainMenuScreen implements Screen {
 	    }
 	}
 
+	// Métodos de la interfaz Screen que no se implementan en esta clase
 	@Override
 	public void show() {
 		// TODO Auto-generated method stub
