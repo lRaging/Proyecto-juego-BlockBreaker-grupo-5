@@ -139,7 +139,7 @@ public class NivelLibre implements Nivel{
 	public void actualizarBloques() {
 		for (int i = 0; i < blocks.size(); i++) {
 			Block b = blocks.get(i);
-			if (b.destroyed) {
+			if (b.isDestroyed()) {
 				puntaje++;
 				blocks.remove(b);
 				i--; //para no saltarse 1 tras eliminar del arraylist
