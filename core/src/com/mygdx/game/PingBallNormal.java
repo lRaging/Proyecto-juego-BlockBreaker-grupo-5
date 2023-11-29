@@ -64,13 +64,13 @@ public class PingBallNormal extends PingBall {
 		if (collidesWith(block)) {
 			sonidoColision.play();
 			ySpeed = -ySpeed;
-			block.destroyed = true;
+			block.setDestroyed(true);
 		}
 	}
 //retorna si se cumple la coincidencia de coordenadas y colision del block con el PingBall
 	private boolean collidesWith(Block bb) {
-		boolean intersectaX = (bb.x + bb.width >= getX() - getSize()) && (bb.x <= getX() + getSize());
-		boolean intersectaY = (bb.y + bb.height >= getY() - getSize()) && (bb.y <= getY() + getSize());
+		boolean intersectaX = (bb.getX() + bb.getWidth() >= getX() - getSize()) && (bb.getX() <= getX() + getSize());
+		boolean intersectaY = (bb.getY() + bb.getHeight() >= getY() - getSize()) && (bb.getY() <= getY() + getSize());
 		return intersectaX && intersectaY;
 	}
 }
