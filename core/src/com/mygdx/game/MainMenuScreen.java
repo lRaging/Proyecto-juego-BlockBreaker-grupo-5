@@ -2,12 +2,12 @@ package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
-import com.badlogic.gdx.utils.ScreenUtils;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
 
 public class MainMenuScreen implements Screen {
@@ -18,6 +18,8 @@ public class MainMenuScreen implements Screen {
 	private BitmapFont font;
 	private OrthographicCamera camera;
 	private int nivel;
+	private ShapeRenderer shape;
+
 	
 
 	// CONSTRUCTOR
@@ -28,7 +30,7 @@ public class MainMenuScreen implements Screen {
 		this.font = game.getFont();
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false, 800, 480);
-		shape = new ShapeRenderer();
+		this.shape = new ShapeRenderer();
 		
 	}
 
