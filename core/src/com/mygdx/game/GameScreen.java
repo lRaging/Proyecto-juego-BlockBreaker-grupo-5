@@ -32,7 +32,7 @@ public class GameScreen implements Screen {
 		batch = new SpriteBatch();
 		font = new BitmapFont();
 		font.getData().setScale(3, 2);
-		shape = new ShapeRenderer();
+		this.shape = new ShapeRenderer();
 		backgroundTexture = new Texture(Gdx.files.internal("background2.png"));
 		// Definir el nivel según el parámetro de entrada
 		definirNivel(nivel);
