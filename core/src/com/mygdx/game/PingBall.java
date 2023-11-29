@@ -9,8 +9,8 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 public abstract class PingBall {
 	private float x;
 	private float y;
-	float xSpeed ;
-	float ySpeed;
+	protected float xSpeed ;
+	protected float ySpeed;
 	private float size;
 	private boolean estaQuieto;
 	protected Sound sonidoColision; 
