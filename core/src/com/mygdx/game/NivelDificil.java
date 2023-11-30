@@ -11,6 +11,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 //clase implementada de Nivel con para la implementacion de los metodos abstractos
 public class NivelDificil implements Nivel{
 
+	private VelocidadPingBallStrategy estrategiaVelocidad;
 	private ShapeRenderer shape;
 	private PingBallNormal ball;
 	private PingBallMejora ballMejora;
@@ -32,10 +33,12 @@ public class NivelDificil implements Nivel{
 		crearBloques(5);
 
 		shape = new ShapeRenderer();
-	    shape.setAutoShapeType(true);
+		shape.setAutoShapeType(true);
+		estrategiaVelocidad = new VelocidadDificilStrategy();
+
 		
 		// Inicializar la pelota y el paddle con posiciones y tamaños específicos
-		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 5, 14,14, true);
+		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 5, estrategiaVelocidad, true);
 		ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 7, 7, 10, true);
 		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,70,5);
 
@@ -63,6 +66,15 @@ public class NivelDificil implements Nivel{
 		else 
 			return false;
 	}
+	// Método para obtener la velocidad actual del PingBall en el eje x
+	public int obtenerVelocidadXPingBall() {
+		return estrategiaVelocidad.obtenerVelocidadX();
+	}
+	
+	// Método para obtener la velocidad actual del PingBall en el eje y
+	public int obtenerVelocidadYPingBall() {
+		return estrategiaVelocidad.obtenerVelocidadY();
+	}
 
 	 // Método para comprobar la posición de la pelota y actualizar el número de vidas si la pelota se sale de la pantalla
 	public void comprobarPelota() {
@@ -76,6 +88,8 @@ public class NivelDificil implements Nivel{
 	public void actualizarLugar() {
 		if (ball.estaQuieto()) {
 			ball.setXY(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11);
+			ball.setxSpeed(obtenerVelocidadXPingBall());
+			ball.setySpeed(obtenerVelocidadYPingBall());
 			if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) ball.setEstaQuieto(false);
 		}else { 
 			ball.update();
