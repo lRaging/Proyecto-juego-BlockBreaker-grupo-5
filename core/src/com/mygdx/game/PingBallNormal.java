@@ -11,8 +11,8 @@ public class PingBallNormal extends PingBall {
 
 
 	//constructor para obtener las mismas medidas, velocidad, la posicion inicla de estar quieto de la clase padre PingBall, y se incluye el sonido a implementar
-	public PingBallNormal(int x, int y, float size, float xSpeed, float ySpeed, boolean iniciaQuieto) {
-		super(x, y, size, xSpeed, ySpeed, iniciaQuieto);
+	public PingBallNormal(int x, int y, float size, VelocidadPingBallStrategy estrategiaVelocidad, boolean iniciaQuieto) {
+		super(x, y, size, estrategiaVelocidad.obtenerVelocidadX(), estrategiaVelocidad.obtenerVelocidadY(), iniciaQuieto);
 		sonidoColision = Gdx.audio.newSound(Gdx.files.internal("choqueBall.mp3")); // Inicializa sonidoColision
 	}
 
