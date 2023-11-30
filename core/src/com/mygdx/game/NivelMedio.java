@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
 public class NivelMedio implements Nivel{
 
+	private VelocidadPingBallStrategy estrategiaVelocidad;
 	private ShapeRenderer shape;
 	private PingBallNormal ball;
 	private PingBallMejora ballMejora;
@@ -25,14 +26,14 @@ public class NivelMedio implements Nivel{
 	int yAleatorio = random.nextInt(juegoAlto + 1500);
 	
 	public NivelMedio() {
-		 // Método constructor para inicializar el nivel medio
-
+		// Método constructor para inicializar el nivel medio
 		crearBloques(4);
 
 		shape = new ShapeRenderer();
-	    shape.setAutoShapeType(true);
+		shape.setAutoShapeType(true);
+		estrategiaVelocidad = new VelocidadMediaStrategy();
 		
-		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 7, 12, 12, true);
+		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 7, estrategiaVelocidad, true);
 		ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 10, 7, 7, true);
 		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,80,10);
 
@@ -62,6 +63,15 @@ public class NivelMedio implements Nivel{
 		else 
 			return false;
 	}
+	// Método para obtener la velocidad actual del PingBall en el eje x
+	public int obtenerVelocidadXPingBall() {
+		return estrategiaVelocidad.obtenerVelocidadX();
+	}
+	
+	// Método para obtener la velocidad actual del PingBall en el eje y
+	public int obtenerVelocidadYPingBall() {
+		return estrategiaVelocidad.obtenerVelocidadY();
+	}
 
 	// Método para comprobar la posición de la pelota y actualizar el número de vidas si la pelota se sale de la pantalla
 	public void comprobarPelota() {
@@ -69,7 +79,7 @@ public class NivelMedio implements Nivel{
 			int xAleatorio = random.nextInt(juegoAncho - 70); // Ajusta el valor máximo para que no se salga de los bordes
 			int yAleatorio = random.nextInt(juegoAlto + 1500);
 			vidas--;
-			ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 7, 12, 12, true);
+			ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 7, estrategiaVelocidad, true);
 			ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 10, 7, 7, true);
 		}
 	}
@@ -78,6 +88,8 @@ public class NivelMedio implements Nivel{
 	public void actualizarLugar() {
 		if (ball.estaQuieto()) {
 			ball.setXY(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11);
+			ball.setxSpeed(obtenerVelocidadXPingBall());
+			ball.setySpeed(obtenerVelocidadYPingBall());
 			if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) ball.setEstaQuieto(false);
 		}else { 
 			ball.update();
