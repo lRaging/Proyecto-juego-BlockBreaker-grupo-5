@@ -6,6 +6,8 @@ public interface Nivel {
 
 	public void crearBloques(int filas);
 	public boolean perder();
+	public int obtenerVelocidadXPingBall();
+	public int obtenerVelocidadYPingBall();
 	public void comprobarPelota();
 	public void actualizarLugar();
 	public void colisionesPelotas();
