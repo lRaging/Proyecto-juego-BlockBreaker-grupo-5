@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
 public class NivelFacil implements Nivel{
 	
+	private VelocidadPingBallStrategy estrategiaVelocidad;
 	private ShapeRenderer shape;
 	private PingBallNormal ball;
 	private PingBallMejora ballMejora;
@@ -31,12 +32,15 @@ public class NivelFacil implements Nivel{
 		crearBloques(2+nivel);
 
 		shape = new ShapeRenderer();
-	    shape.setAutoShapeType(true);
+		shape.setAutoShapeType(true);
+		estrategiaVelocidad = new VelocidadFacilStrategy();
+
 
 		// Inicializar la pelota, la pelota de mejora y el paddle con posiciones y tamaños específicos
-		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 10, 5, 7, true);
+		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 10, estrategiaVelocidad, true);
 		ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 10, 5, 7, true);
 		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,100,10);
+
 
 		vidas = 5;
 		puntaje = 0;
@@ -64,6 +68,17 @@ public class NivelFacil implements Nivel{
 		else 
 			return false;
 	}
+	
+	// Método para obtener la velocidad actual del PingBall en el eje x
+	public int obtenerVelocidadXPingBall() {
+		return estrategiaVelocidad.obtenerVelocidadX();
+	}
+
+	// Método para obtener la velocidad actual del PingBall en el eje y
+	public int obtenerVelocidadYPingBall() {
+		return estrategiaVelocidad.obtenerVelocidadY();
+	}
+
 
 	// Método para comprobar la posición de la pelota y actualizar el número de vidas si la pelota se sale de la pantalla
 	public void comprobarPelota() {
@@ -71,7 +86,7 @@ public class NivelFacil implements Nivel{
 			int xAleatorio = random.nextInt(juegoAncho - 50); // Ajusta el valor máximo para que no se salga de los bordes
 			int yAleatorio = random.nextInt(juegoAlto + 2500);
 			vidas--;
-			ball = new PingBallNormal(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11, 10, 5, 7, true);
+			ball = new PingBallNormal(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11, 10, estrategiaVelocidad, true);
 			ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 10, 5, 7, true);
 		}
 	}
@@ -80,8 +95,11 @@ public class NivelFacil implements Nivel{
 	public void actualizarLugar() {
 		if (ball.estaQuieto()) {
 			ball.setXY(pad.getX()+pad.getWidth()/2-5, pad.getY()+pad.getHeight()+11);
+			ball.setxSpeed(obtenerVelocidadXPingBall());
+			ball.setySpeed(obtenerVelocidadYPingBall());
 			if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) ball.setEstaQuieto(false);
 		}else { 
+
 			ball.update();
 			ballMejora.update();
 		}
@@ -161,7 +179,6 @@ public class NivelFacil implements Nivel{
 	//ventaja de aumentar vidas y el tamaño del pingBall
     public void mejoras() {
         vidas++;
-        
         ball.setSize(ball.getSize() + 5); 
     }
 }
