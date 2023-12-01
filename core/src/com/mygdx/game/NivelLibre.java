@@ -37,7 +37,13 @@ public class NivelLibre implements Nivel{
 		
 		// Inicializar la pelota, la pelota de mejora y el paddle con posiciones y tamaños específicos
 
-		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 10, estrategiaVelocidad, true);
+		ball = new PingBallNormal.PingBallNormalBuilder()
+	        	.setX(100)
+	        	.setY(200)
+	        	.setSize(10)
+	        	.setXYSpeed(estrategiaVelocidad)
+	        	.setIniciaQuieto(true)
+	        	.build();
 		ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 7, 7, 10, true);
 		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,100,10);
 
@@ -111,13 +117,6 @@ public class NivelLibre implements Nivel{
 		ballMejora.checkCollision(pad);
 		if(colisionBallMejora == true) {
 			mejoras();
-		} else {
-			if ((ballMejora.getY() < 0)) {
-				if (puntaje > 0) {
-					puntaje--;
-				}
-			}
-			
 		}
 	}
 

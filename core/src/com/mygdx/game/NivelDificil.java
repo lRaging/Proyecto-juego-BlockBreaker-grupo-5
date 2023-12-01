@@ -38,7 +38,13 @@ public class NivelDificil implements Nivel{
 
 		
 		// Inicializar la pelota y el paddle con posiciones y tamaños específicos
-		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 5, estrategiaVelocidad, true);
+		ball = new PingBallNormal.PingBallNormalBuilder()
+	        	.setX(2-10)
+	        	.setY(41)
+	        	.setSize(5)
+	        	.setXYSpeed(estrategiaVelocidad)
+	        	.setIniciaQuieto(true)
+	        	.build();
 		ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 7, 7, 10, true);
 		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,70,5);
 
@@ -104,15 +110,8 @@ public class NivelDificil implements Nivel{
 		ballMejora.checkCollision(pad);
 		if(colisionBallMejora == true) {
 			mejoras();
-		} else {
-			//si el PingBallMejora se escapa de la pantalla, se le resta un punto siempre y cuando sea mayor estricto a 0
-			if ((ballMejora.getY() < 0)) {
-				if (puntaje > 0) {
-					puntaje--;
-				}
-			}
-			
 		}
+
 	}
 
 	// Método para dibujar las pelotas en el juego

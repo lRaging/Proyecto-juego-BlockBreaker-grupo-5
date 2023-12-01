@@ -31,8 +31,8 @@ public class PingBallMejora extends PingBall{
 	//asegura que si se colisiona con el paddle, haya un cambio de veolcidad de la que venía cayendo
 	public boolean checkCollision(Paddle paddle) {
 		if (collidesWith(paddle)) {
-			ySpeed = -ySpeed;
-			return true;
+	        setY(-1000); // Ubicar fuera de la pantalla
+	        return true;
 		    
 		}
 		return false;
@@ -47,5 +47,6 @@ public class PingBallMejora extends PingBall{
 	//método de la clase padre pero no ocurrirá nada si es que el pingBallMejora choca con el block
 	public void checkCollision(Block block) {
 	}
+	
 	
 }

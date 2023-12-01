@@ -49,7 +49,6 @@ public class NivelFacil implements Nivel{
 		ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 10, 5, 7, true);
 		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,100,10);
 
-
 		vidas = 5;
 		puntaje = 0;
 	}
@@ -120,13 +119,6 @@ public class NivelFacil implements Nivel{
 		ballMejora.checkCollision(pad);
 		if(colisionBallMejora == true) {
 			mejoras();
-		}else {
-			if ((ballMejora.getY() < 0)) {
-				if (puntaje > 0) {
-					puntaje--;
-				}
-			}
-			
 		}
 	}
 

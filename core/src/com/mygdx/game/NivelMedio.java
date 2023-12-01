@@ -33,7 +33,13 @@ public class NivelMedio implements Nivel{
 		shape.setAutoShapeType(true);
 		estrategiaVelocidad = new VelocidadMediaStrategy();
 		
-		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 7, estrategiaVelocidad, true);
+		ball = new PingBallNormal.PingBallNormalBuilder()
+	        	.setX(2-10)
+	        	.setY(41)
+	        	.setSize(7)
+	        	.setXYSpeed(estrategiaVelocidad)
+	        	.setIniciaQuieto(true)
+	        	.build();
 		ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 10, 7, 7, true);
 		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,80,10);
 
@@ -104,13 +110,6 @@ public class NivelMedio implements Nivel{
 		ballMejora.checkCollision(pad);
 		if(colisionBallMejora == true) {
 			mejoras();
-		} else {
-			if ((ballMejora.getY() < 0)) {
-				if (puntaje > 0) {
-					puntaje--;
-				}
-			}
-			
 		}
 	}
 
