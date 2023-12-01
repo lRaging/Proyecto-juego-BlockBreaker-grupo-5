@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 //clase hija de la clase abstracta pingball que comparte los mismos métodos con pingBallMejora pero distinto comportamiento
 public class PingBallNormal extends PingBall {
 	private Color color = Color.WHITE;
+	
 
 
 	//constructor para obtener las mismas medidas, velocidad, la posicion inicla de estar quieto de la clase padre PingBall, y se incluye el sonido a implementar
@@ -50,8 +51,7 @@ public class PingBallNormal extends PingBall {
 		}
 	}
 
-	//retorna si se cumple la coincidencia de coordenadas y colision del paddle con el PingBall
-	private boolean collidesWith(Paddle pp) {
+	public boolean collidesWith(Paddle pp) {
 		boolean intersectaX = (pp.getX() + pp.getWidth() >= getX() - getSize()) && (pp.getX() <= getX() + getSize());
 		boolean intersectaY = (pp.getY() + pp.getHeight() >= getY() - getSize()) && (pp.getY() <= getY() + getSize());
 		return intersectaX && intersectaY;
@@ -73,4 +73,45 @@ public class PingBallNormal extends PingBall {
 		boolean intersectaY = (bb.getY() + bb.getHeight() >= getY() - getSize()) && (bb.getY() <= getY() + getSize());
 		return intersectaX && intersectaY;
 	}
+	
+	public static class PingBallNormalBuilder{
+	    private int x;
+	    private int y;
+	    private float size;
+	    private VelocidadPingBallStrategy Speed;
+	    private boolean iniciaQuieto;
+	    
+	    public PingBallNormalBuilder setX(int x) {
+	        this.x = x;
+	        return this;
+	    }
+
+	    public PingBallNormalBuilder setY(int y) {
+	        this.y = y;
+	        return this;
+	    }
+
+	    public PingBallNormalBuilder setSize(float size) {
+	        this.size = size;
+	        return this;
+	    }
+
+	    public PingBallNormalBuilder setXYSpeed(VelocidadPingBallStrategy Speed) {
+	        this.Speed = Speed;
+	        return this;
+	    }
+
+
+	    public PingBallNormalBuilder setIniciaQuieto(boolean iniciaQuieto) {
+	        this.iniciaQuieto = iniciaQuieto;
+	        return this;
+	    }
+
+	    public PingBallNormal build() {
+	        return new PingBallNormal(x, y, size, Speed, iniciaQuieto);
+	    }
+
+	}
 }
+
+

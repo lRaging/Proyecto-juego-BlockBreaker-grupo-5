@@ -4,7 +4,7 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
-public class BlockBreakerMenu extends Game 
+public class BlockBreakerMenu extends Game{
     // Variables de instancia para el menú del juego
     private SpriteBatch batch;
     private BitmapFont font;
@@ -15,7 +15,7 @@ public class BlockBreakerMenu extends Game
         batch = new SpriteBatch();
         font = new BitmapFont();
         // Configura la pantalla de inicio como la pantalla actual del juego
-        this.setScreen(new MainMenuScreen(this));
+        this.setScreen(MainMenuScreen.getInstance(this));
     }
 
     // Método para renderizar el menú del juego
@@ -45,6 +45,5 @@ public class BlockBreakerMenu extends Game
     public void setHigherScore(int higherScore) {
         this.higherScore = higherScore;
     }
-
 
 }

@@ -37,9 +37,8 @@ public class PingBallMejora extends PingBall{
 		}
 		return false;
 	}
-
-	//retorna las coordenadas coincidentes del paddle con el pingballMejora si es que hay un choque
-	private boolean collidesWith(Paddle pp) {
+	
+	public boolean collidesWith(Paddle pp) {
 		boolean intersectaX = (pp.getX() + pp.getWidth() >= getX() - getSize()) && (pp.getX() <= getX() + getSize());
 		boolean intersectaY = (pp.getY() + pp.getHeight() >= getY() - getSize()) && (pp.getY() <= getY() + getSize());
 		return intersectaX && intersectaY;

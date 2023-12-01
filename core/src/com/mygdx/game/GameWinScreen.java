@@ -42,7 +42,7 @@ public class GameWinScreen implements Screen {
 
 		//si se hace click a la pantalla de victoria, se comienza con un nuevo juego mostrando el menu principal 
 		if (Gdx.input.isTouched()) {
-			game.setScreen(new MainMenuScreen(game));
+			game.setScreen(MainMenuScreen.getInstance(game));
 			dispose();
 		}
 	}

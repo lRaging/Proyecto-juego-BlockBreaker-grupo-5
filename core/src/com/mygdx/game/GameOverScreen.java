@@ -42,7 +42,7 @@ public class GameOverScreen implements Screen {
 
 		//si se realiza un click, se inicializa el juego desde el menuPrincipal
 		if (Gdx.input.isTouched()) {
-			game.setScreen(new MainMenuScreen(game));
+			game.setScreen(MainMenuScreen.getInstance(game));
 			dispose();
 		}
 	}

@@ -19,8 +19,7 @@ public class MainMenuScreen implements Screen {
 	private OrthographicCamera camera;
 	private int nivel;
 	private ShapeRenderer shape;
-
-	
+    private static MainMenuScreen instance;
 
 	// CONSTRUCTOR
 	public MainMenuScreen(final BlockBreakerMenu game) {
@@ -34,6 +33,13 @@ public class MainMenuScreen implements Screen {
 		
 	}
 
+    public static MainMenuScreen getInstance(BlockBreakerMenu game) {
+        if (instance == null) {
+            instance = new MainMenuScreen(game);
+        }
+        return instance;
+    }
+    
 	@Override
 	 // Método para renderizar el menú principal del juego
 	public void render(float delta) {

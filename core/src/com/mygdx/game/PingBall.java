@@ -32,6 +32,7 @@ public abstract class PingBall {
 	public abstract void draw(ShapeRenderer shapeRenderer);
 	public abstract void update();
 
+	
 	public boolean estaQuieto() {
 		return estaQuieto;
 	}
@@ -62,13 +63,11 @@ public abstract class PingBall {
 	public void setY(float y) {
 		this.y = y;
 	}
-
+	public void setSize(float size) {
+        this.size = size;
+    }
 	public float getSize() {
 		return size;
-	}
-	
-	public void setSize(float size) {
-	    this.size = size;
 	}
 	
 	public void setySpeed(float ySpeed) {

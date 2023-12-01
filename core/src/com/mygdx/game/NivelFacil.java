@@ -19,12 +19,14 @@ public class NivelFacil implements Nivel{
 	private int puntaje;
 	private int nivel;
 	
+	
 	int juegoAncho = Gdx.graphics.getWidth(); // Ancho del juego
 	int juegoAlto = Gdx.graphics.getHeight(); // Alto del juego
 	// Genera coordenadas x e y aleatorias dentro de los límites del juego
 	Random random = new Random();
 	int xAleatorio = random.nextInt(juegoAncho - 50); // Ajusta el valor máximo para que no se salga de los bordes
 	int yAleatorio = random.nextInt(juegoAlto + 2500);
+
 	
 	public NivelFacil() {
 		// Método constructor para inicializar el nivel fácil
@@ -37,7 +39,13 @@ public class NivelFacil implements Nivel{
 
 
 		// Inicializar la pelota, la pelota de mejora y el paddle con posiciones y tamaños específicos
-		ball = new PingBallNormal(Gdx.graphics.getWidth()/2-10, 41, 10, estrategiaVelocidad, true);
+		ball = new PingBallNormal.PingBallNormalBuilder()
+        	.setX(100)
+        	.setY(200)
+        	.setSize(10)
+        	.setXYSpeed(estrategiaVelocidad)
+        	.setIniciaQuieto(true)
+        	.build();
 		ballMejora = new PingBallMejora(xAleatorio, yAleatorio, 10, 5, 7, true);
 		pad = new Paddle(Gdx.graphics.getWidth()/2-50,40,100,10);
 
